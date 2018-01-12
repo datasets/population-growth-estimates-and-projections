@@ -1,0 +1,29 @@
+{
+  "name": "population-growth",
+  "resources": [
+    {
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "population",
+      "path": "data/population.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "type": "string"
+          },
+          {
+            "name": "year",
+            "type": "year"
+          },
+          {
+            "decimalChar": ".",
+            "groupChar": "",
+            "name": "population",
+            "type": "number"
+          }
+        ]
+      }
+    }
+  ]
+}
