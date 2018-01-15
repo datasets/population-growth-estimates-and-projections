@@ -272,24 +272,6 @@
       "name": "population-growth-projections",
       "resources": [
         {
-          "name": "population-low-fertility",
-          "transform": [
-            {
-              "expression": "data['region'] === 'WORLD'",
-              "type": "filter"
-            }
-          ]
-        },
-        {
-          "name": "population-high-fertility",
-          "transform": [
-            {
-              "expression": "data['region'] === 'WORLD'",
-              "type": "filter"
-            }
-          ]
-        },
-        {
           "name": "population-no-change",
           "transform": [
             {
@@ -307,7 +289,7 @@
         "type": "line"
       },
       "specType": "simple",
-      "title": "Population Growth - World Projections"
+      "title": "Population Growth - World Projections (No change)"
     }
   ]
 }
