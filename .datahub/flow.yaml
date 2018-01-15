@@ -19,11 +19,6 @@ inputs:
       population-zero-migration: https://esa.un.org/unpd/wpp/DVD/Files/1_Indicators%20(Standard)/EXCEL_FILES/1_Population/WPP2017_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES.xlsx
       population-constant-mortality: https://esa.un.org/unpd/wpp/DVD/Files/1_Indicators%20(Standard)/EXCEL_FILES/1_Population/WPP2017_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES.xlsx
       population-no-change: https://esa.un.org/unpd/wpp/DVD/Files/1_Indicators%20(Standard)/EXCEL_FILES/1_Population/WPP2017_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES.xlsx
-    descriptor:
-      name: population-growth-estimates-and-projections
-      title: Popuplation Growth
-      homepage: https://esa.un.org/unpd/wpp/Download/Standard/Population/
-      resources: []
 processing:
   -
     input: population-estimates
