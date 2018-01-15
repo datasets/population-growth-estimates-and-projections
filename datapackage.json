@@ -243,5 +243,71 @@
         ]
       }
     }
+  ],
+  "views": [
+    {
+      "name": "population-growth-estimates",
+      "resources": [
+        {
+          "name": "population-estimates",
+          "transform": [
+            {
+              "expression": "data['region'] === 'WORLD'",
+              "type": "filter"
+            }
+          ]
+        }
+      ],
+      "spec": {
+        "group": "year",
+        "series": [
+          "population"
+        ],
+        "type": "line"
+      },
+      "specType": "simple",
+      "title": "Population Growth - World Estimates"
+    },
+    {
+      "name": "population-growth-projections",
+      "resources": [
+        {
+          "name": "population-low-fertility",
+          "transform": [
+            {
+              "expression": "data['region'] === 'WORLD'",
+              "type": "filter"
+            }
+          ]
+        },
+        {
+          "name": "population-high-fertility",
+          "transform": [
+            {
+              "expression": "data['region'] === 'WORLD'",
+              "type": "filter"
+            }
+          ]
+        },
+        {
+          "name": "population-no-change",
+          "transform": [
+            {
+              "expression": "data['region'] === 'WORLD'",
+              "type": "filter"
+            }
+          ]
+        }
+      ],
+      "spec": {
+        "group": "year",
+        "series": [
+          "population"
+        ],
+        "type": "line"
+      },
+      "specType": "simple",
+      "title": "Population Growth - World Projections"
+    }
   ]
 }
