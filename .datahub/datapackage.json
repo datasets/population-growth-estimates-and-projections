@@ -6,7 +6,7 @@
   "resources": [
     {
       "encoding": "utf-8",
-      "format": "csv",
+      "format": "xlsx",
       "name": "population-estimates",
       "path": "population-estimates.csv",
       "schema": {
@@ -300,7 +300,7 @@
     },
     {
       "encoding": "utf-8",
-      "format": "csv",
+      "format": "xlsx",
       "name": "population-medium-fertility",
       "path": "population-medium-fertility.csv",
       "schema": {
@@ -674,7 +674,7 @@
     },
     {
       "encoding": "utf-8",
-      "format": "csv",
+      "format": "xlsx",
       "name": "population-high-fertility",
       "path": "population-high-fertility.csv",
       "schema": {
@@ -1048,7 +1048,7 @@
     },
     {
       "encoding": "utf-8",
-      "format": "csv",
+      "format": "xlsx",
       "name": "population-low-fertility",
       "path": "population-low-fertility.csv",
       "schema": {
@@ -1422,7 +1422,7 @@
     },
     {
       "encoding": "utf-8",
-      "format": "csv",
+      "format": "xlsx",
       "name": "population-zero-migration",
       "path": "population-zero-migration.csv",
       "schema": {
@@ -1796,7 +1796,7 @@
     },
     {
       "encoding": "utf-8",
-      "format": "csv",
+      "format": "xlsx",
       "name": "population-momentum",
       "path": "population-momentum.csv",
       "schema": {
@@ -2170,7 +2170,7 @@
     },
     {
       "encoding": "utf-8",
-      "format": "csv",
+      "format": "xlsx",
       "name": "population-instant-replacement",
       "path": "population-instant-replacement.csv",
       "schema": {
@@ -2544,7 +2544,7 @@
     },
     {
       "encoding": "utf-8",
-      "format": "csv",
+      "format": "xlsx",
       "name": "population-constant-fertility",
       "path": "population-constant-fertility.csv",
       "schema": {
@@ -2918,7 +2918,7 @@
     },
     {
       "encoding": "utf-8",
-      "format": "csv",
+      "format": "xlsx",
       "name": "population-constant-mortality",
       "path": "population-constant-mortality.csv",
       "schema": {
@@ -3292,7 +3292,7 @@
     },
     {
       "encoding": "utf-8",
-      "format": "csv",
+      "format": "xlsx",
       "name": "population-no-change",
       "path": "population-no-change.csv",
       "schema": {
