@@ -1,11 +1,229 @@
 {
-  "name": "population-growth",
+  "name": "population-growth-estimates-and-projections",
+  "title": "Popuplation Growth",
+  "description": "Total Population - Both Sexes. De facto population in a country, area or region",
   "resources": [
     {
       "encoding": "utf-8",
       "format": "csv",
-      "name": "population",
-      "path": "data/population.csv",
+      "name": "population-estimates",
+      "path": "data/population-estimates.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "type": "string"
+          },
+          {
+            "name": "year",
+            "type": "year"
+          },
+          {
+            "decimalChar": ".",
+            "groupChar": "",
+            "name": "population",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "population-medium-fertility",
+      "path": "data/population-medium-fertility.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "type": "string"
+          },
+          {
+            "name": "year",
+            "type": "year"
+          },
+          {
+            "decimalChar": ".",
+            "groupChar": "",
+            "name": "population",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "population-high-fertility",
+      "path": "data/population-high-fertility.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "type": "string"
+          },
+          {
+            "name": "year",
+            "type": "year"
+          },
+          {
+            "decimalChar": ".",
+            "groupChar": "",
+            "name": "population",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "population-low-fertility",
+      "path": "data/population-low-fertility.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "type": "string"
+          },
+          {
+            "name": "year",
+            "type": "year"
+          },
+          {
+            "decimalChar": ".",
+            "groupChar": "",
+            "name": "population",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "population-constant-fertility",
+      "path": "data/population-constant-fertility.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "type": "string"
+          },
+          {
+            "name": "year",
+            "type": "year"
+          },
+          {
+            "decimalChar": ".",
+            "groupChar": "",
+            "name": "population",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "population-instant-replacement",
+      "path": "data/population-instant-replacement.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "type": "string"
+          },
+          {
+            "name": "year",
+            "type": "year"
+          },
+          {
+            "decimalChar": ".",
+            "groupChar": "",
+            "name": "population",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "population-momentum",
+      "path": "data/population-momentum.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "type": "string"
+          },
+          {
+            "name": "year",
+            "type": "year"
+          },
+          {
+            "decimalChar": ".",
+            "groupChar": "",
+            "name": "population",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "population-zero-migration",
+      "path": "data/population-zero-migration.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "type": "string"
+          },
+          {
+            "name": "year",
+            "type": "year"
+          },
+          {
+            "decimalChar": ".",
+            "groupChar": "",
+            "name": "population",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "population-constant-mortality",
+      "path": "data/population-constant-mortality.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "region",
+            "type": "string"
+          },
+          {
+            "name": "year",
+            "type": "year"
+          },
+          {
+            "decimalChar": ".",
+            "groupChar": "",
+            "name": "population",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "population-no-change",
+      "path": "data/population-no-change.csv",
       "schema": {
         "fields": [
           {
