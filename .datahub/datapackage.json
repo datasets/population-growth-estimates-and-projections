@@ -1,0 +1,124 @@
+{
+  "name": "population-growth-estimates-and-projections",
+  "title": "Popuplation Growth",
+  "homepage": "https://esa.un.org/unpd/wpp/Download/Standard/Population/",
+  "description": "Total Population - Both Sexes. De facto population in a country, area or region",
+  "resources": [],
+  "views": [
+    {
+      "name": "population-growth-estimates",
+      "resources": [
+        {
+          "name": "population-estimates",
+          "transform": [
+            {
+              "expression": "data['region'] === 'WORLD'",
+              "type": "filter"
+            }
+          ]
+        }
+      ],
+      "spec": {
+        "group": "year",
+        "series": [
+          "population"
+        ],
+        "type": "line"
+      },
+      "specType": "simple",
+      "title": "Population Growth - World Estimates"
+    },
+    {
+      "name": "population-growth-projections",
+      "resources": [
+        {
+          "name": "population-no-change",
+          "transform": [
+            {
+              "expression": "data['region'] === 'WORLD'",
+              "type": "filter"
+            }
+          ]
+        }
+      ],
+      "spec": {
+        "group": "year",
+        "series": [
+          "population"
+        ],
+        "type": "line"
+      },
+      "specType": "simple",
+      "title": "Population Growth - World Projections (No change)"
+    },
+    {
+      "name": "population-growth-projections-low",
+      "resources": [
+        {
+          "name": "population-low-fertility",
+          "transform": [
+            {
+              "expression": "data['region'] === 'WORLD'",
+              "type": "filter"
+            }
+          ]
+        }
+      ],
+      "spec": {
+        "group": "year",
+        "series": [
+          "population"
+        ],
+        "type": "line"
+      },
+      "specType": "simple",
+      "title": "Population Growth - World Projections (Low Fertility)"
+    },
+    {
+      "name": "population-growth-projections-medium",
+      "resources": [
+        {
+          "name": "population-medium-fertility",
+          "transform": [
+            {
+              "expression": "data['region'] === 'WORLD'",
+              "type": "filter"
+            }
+          ]
+        }
+      ],
+      "spec": {
+        "group": "year",
+        "series": [
+          "population"
+        ],
+        "type": "line"
+      },
+      "specType": "simple",
+      "title": "Population Growth - World Projections (Medium Fertility)"
+    },
+    {
+      "name": "population-growth-projections-high",
+      "resources": [
+        {
+          "name": "population-high-fertility",
+          "transform": [
+            {
+              "expression": "data['region'] === 'WORLD'",
+              "type": "filter"
+            }
+          ]
+        }
+      ],
+      "spec": {
+        "group": "year",
+        "series": [
+          "population"
+        ],
+        "type": "line"
+      },
+      "specType": "simple",
+      "title": "Population Growth - World Projections (High Fertility)"
+    }
+  ]
+}
