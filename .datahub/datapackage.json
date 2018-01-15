@@ -1,9 +1,3670 @@
 {
   "name": "population-growth-estimates-and-projections",
-  "title": "Popuplation Growth",
+  "title": "Population Growth",
   "homepage": "https://esa.un.org/unpd/wpp/Download/Standard/Population/",
   "description": "Total Population - Both Sexes. De facto population in a country, area or region",
-  "resources": [],
+  "resources": [
+    {
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "population-estimates",
+      "path": "population-estimates.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "index",
+            "type": "any"
+          },
+          {
+            "name": "variant",
+            "type": "any"
+          },
+          {
+            "name": "region",
+            "type": "any"
+          },
+          {
+            "name": "notes",
+            "type": "any"
+          },
+          {
+            "name": "country-code",
+            "type": "any"
+          },
+          {
+            "name": 1950,
+            "type": "any"
+          },
+          {
+            "name": 1951,
+            "type": "any"
+          },
+          {
+            "name": 1952,
+            "type": "any"
+          },
+          {
+            "name": 1953,
+            "type": "any"
+          },
+          {
+            "name": 1954,
+            "type": "any"
+          },
+          {
+            "name": 1955,
+            "type": "any"
+          },
+          {
+            "name": 1956,
+            "type": "any"
+          },
+          {
+            "name": 1957,
+            "type": "any"
+          },
+          {
+            "name": 1958,
+            "type": "any"
+          },
+          {
+            "name": 1959,
+            "type": "any"
+          },
+          {
+            "name": 1960,
+            "type": "any"
+          },
+          {
+            "name": 1961,
+            "type": "any"
+          },
+          {
+            "name": 1962,
+            "type": "any"
+          },
+          {
+            "name": 1963,
+            "type": "any"
+          },
+          {
+            "name": 1964,
+            "type": "any"
+          },
+          {
+            "name": 1965,
+            "type": "any"
+          },
+          {
+            "name": 1966,
+            "type": "any"
+          },
+          {
+            "name": 1967,
+            "type": "any"
+          },
+          {
+            "name": 1968,
+            "type": "any"
+          },
+          {
+            "name": 1969,
+            "type": "any"
+          },
+          {
+            "name": 1970,
+            "type": "any"
+          },
+          {
+            "name": 1971,
+            "type": "any"
+          },
+          {
+            "name": 1972,
+            "type": "any"
+          },
+          {
+            "name": 1973,
+            "type": "any"
+          },
+          {
+            "name": 1974,
+            "type": "any"
+          },
+          {
+            "name": 1975,
+            "type": "any"
+          },
+          {
+            "name": 1976,
+            "type": "any"
+          },
+          {
+            "name": 1977,
+            "type": "any"
+          },
+          {
+            "name": 1978,
+            "type": "any"
+          },
+          {
+            "name": 1979,
+            "type": "any"
+          },
+          {
+            "name": 1980,
+            "type": "any"
+          },
+          {
+            "name": 1981,
+            "type": "any"
+          },
+          {
+            "name": 1982,
+            "type": "any"
+          },
+          {
+            "name": 1983,
+            "type": "any"
+          },
+          {
+            "name": 1984,
+            "type": "any"
+          },
+          {
+            "name": 1985,
+            "type": "any"
+          },
+          {
+            "name": 1986,
+            "type": "any"
+          },
+          {
+            "name": 1987,
+            "type": "any"
+          },
+          {
+            "name": 1988,
+            "type": "any"
+          },
+          {
+            "name": 1989,
+            "type": "any"
+          },
+          {
+            "name": 1990,
+            "type": "any"
+          },
+          {
+            "name": 1991,
+            "type": "any"
+          },
+          {
+            "name": 1992,
+            "type": "any"
+          },
+          {
+            "name": 1993,
+            "type": "any"
+          },
+          {
+            "name": 1994,
+            "type": "any"
+          },
+          {
+            "name": 1995,
+            "type": "any"
+          },
+          {
+            "name": 1996,
+            "type": "any"
+          },
+          {
+            "name": 1997,
+            "type": "any"
+          },
+          {
+            "name": 1998,
+            "type": "any"
+          },
+          {
+            "name": 1999,
+            "type": "any"
+          },
+          {
+            "name": 2000,
+            "type": "any"
+          },
+          {
+            "name": 2001,
+            "type": "any"
+          },
+          {
+            "name": 2002,
+            "type": "any"
+          },
+          {
+            "name": 2003,
+            "type": "any"
+          },
+          {
+            "name": 2004,
+            "type": "any"
+          },
+          {
+            "name": 2005,
+            "type": "any"
+          },
+          {
+            "name": 2006,
+            "type": "any"
+          },
+          {
+            "name": 2007,
+            "type": "any"
+          },
+          {
+            "name": 2008,
+            "type": "any"
+          },
+          {
+            "name": 2009,
+            "type": "any"
+          },
+          {
+            "name": 2010,
+            "type": "any"
+          },
+          {
+            "name": 2011,
+            "type": "any"
+          },
+          {
+            "name": 2012,
+            "type": "any"
+          },
+          {
+            "name": 2013,
+            "type": "any"
+          },
+          {
+            "name": 2014,
+            "type": "any"
+          },
+          {
+            "name": 2015,
+            "type": "any"
+          }
+        ]
+      }
+    },
+    {
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "population-medium-fertility",
+      "path": "population-medium-fertility.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "index",
+            "type": "any"
+          },
+          {
+            "name": "variant",
+            "type": "any"
+          },
+          {
+            "name": "region",
+            "type": "any"
+          },
+          {
+            "name": "notes",
+            "type": "any"
+          },
+          {
+            "name": "country-code",
+            "type": "any"
+          },
+          {
+            "name": 2015,
+            "type": "any"
+          },
+          {
+            "name": 2016,
+            "type": "any"
+          },
+          {
+            "name": 2017,
+            "type": "any"
+          },
+          {
+            "name": 2018,
+            "type": "any"
+          },
+          {
+            "name": 2019,
+            "type": "any"
+          },
+          {
+            "name": 2020,
+            "type": "any"
+          },
+          {
+            "name": 2021,
+            "type": "any"
+          },
+          {
+            "name": 2022,
+            "type": "any"
+          },
+          {
+            "name": 2023,
+            "type": "any"
+          },
+          {
+            "name": 2024,
+            "type": "any"
+          },
+          {
+            "name": 2025,
+            "type": "any"
+          },
+          {
+            "name": 2026,
+            "type": "any"
+          },
+          {
+            "name": 2027,
+            "type": "any"
+          },
+          {
+            "name": 2028,
+            "type": "any"
+          },
+          {
+            "name": 2029,
+            "type": "any"
+          },
+          {
+            "name": 2030,
+            "type": "any"
+          },
+          {
+            "name": 2031,
+            "type": "any"
+          },
+          {
+            "name": 2032,
+            "type": "any"
+          },
+          {
+            "name": 2033,
+            "type": "any"
+          },
+          {
+            "name": 2034,
+            "type": "any"
+          },
+          {
+            "name": 2035,
+            "type": "any"
+          },
+          {
+            "name": 2036,
+            "type": "any"
+          },
+          {
+            "name": 2037,
+            "type": "any"
+          },
+          {
+            "name": 2038,
+            "type": "any"
+          },
+          {
+            "name": 2039,
+            "type": "any"
+          },
+          {
+            "name": 2040,
+            "type": "any"
+          },
+          {
+            "name": 2041,
+            "type": "any"
+          },
+          {
+            "name": 2042,
+            "type": "any"
+          },
+          {
+            "name": 2043,
+            "type": "any"
+          },
+          {
+            "name": 2044,
+            "type": "any"
+          },
+          {
+            "name": 2045,
+            "type": "any"
+          },
+          {
+            "name": 2046,
+            "type": "any"
+          },
+          {
+            "name": 2047,
+            "type": "any"
+          },
+          {
+            "name": 2048,
+            "type": "any"
+          },
+          {
+            "name": 2049,
+            "type": "any"
+          },
+          {
+            "name": 2050,
+            "type": "any"
+          },
+          {
+            "name": 2051,
+            "type": "any"
+          },
+          {
+            "name": 2052,
+            "type": "any"
+          },
+          {
+            "name": 2053,
+            "type": "any"
+          },
+          {
+            "name": 2054,
+            "type": "any"
+          },
+          {
+            "name": 2055,
+            "type": "any"
+          },
+          {
+            "name": 2056,
+            "type": "any"
+          },
+          {
+            "name": 2057,
+            "type": "any"
+          },
+          {
+            "name": 2058,
+            "type": "any"
+          },
+          {
+            "name": 2059,
+            "type": "any"
+          },
+          {
+            "name": 2060,
+            "type": "any"
+          },
+          {
+            "name": 2061,
+            "type": "any"
+          },
+          {
+            "name": 2062,
+            "type": "any"
+          },
+          {
+            "name": 2063,
+            "type": "any"
+          },
+          {
+            "name": 2064,
+            "type": "any"
+          },
+          {
+            "name": 2065,
+            "type": "any"
+          },
+          {
+            "name": 2066,
+            "type": "any"
+          },
+          {
+            "name": 2067,
+            "type": "any"
+          },
+          {
+            "name": 2068,
+            "type": "any"
+          },
+          {
+            "name": 2069,
+            "type": "any"
+          },
+          {
+            "name": 2070,
+            "type": "any"
+          },
+          {
+            "name": 2071,
+            "type": "any"
+          },
+          {
+            "name": 2072,
+            "type": "any"
+          },
+          {
+            "name": 2073,
+            "type": "any"
+          },
+          {
+            "name": 2074,
+            "type": "any"
+          },
+          {
+            "name": 2075,
+            "type": "any"
+          },
+          {
+            "name": 2076,
+            "type": "any"
+          },
+          {
+            "name": 2077,
+            "type": "any"
+          },
+          {
+            "name": 2078,
+            "type": "any"
+          },
+          {
+            "name": 2079,
+            "type": "any"
+          },
+          {
+            "name": 2080,
+            "type": "any"
+          },
+          {
+            "name": 2081,
+            "type": "any"
+          },
+          {
+            "name": 2082,
+            "type": "any"
+          },
+          {
+            "name": 2083,
+            "type": "any"
+          },
+          {
+            "name": 2084,
+            "type": "any"
+          },
+          {
+            "name": 2085,
+            "type": "any"
+          },
+          {
+            "name": 2086,
+            "type": "any"
+          },
+          {
+            "name": 2087,
+            "type": "any"
+          },
+          {
+            "name": 2088,
+            "type": "any"
+          },
+          {
+            "name": 2089,
+            "type": "any"
+          },
+          {
+            "name": 2090,
+            "type": "any"
+          },
+          {
+            "name": 2091,
+            "type": "any"
+          },
+          {
+            "name": 2092,
+            "type": "any"
+          },
+          {
+            "name": 2093,
+            "type": "any"
+          },
+          {
+            "name": 2094,
+            "type": "any"
+          },
+          {
+            "name": 2095,
+            "type": "any"
+          },
+          {
+            "name": 2096,
+            "type": "any"
+          },
+          {
+            "name": 2097,
+            "type": "any"
+          },
+          {
+            "name": 2098,
+            "type": "any"
+          },
+          {
+            "name": 2099,
+            "type": "any"
+          },
+          {
+            "name": 2100,
+            "type": "any"
+          }
+        ]
+      }
+    },
+    {
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "population-high-fertility",
+      "path": "population-high-fertility.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "index",
+            "type": "any"
+          },
+          {
+            "name": "variant",
+            "type": "any"
+          },
+          {
+            "name": "region",
+            "type": "any"
+          },
+          {
+            "name": "notes",
+            "type": "any"
+          },
+          {
+            "name": "country-code",
+            "type": "any"
+          },
+          {
+            "name": 2015,
+            "type": "any"
+          },
+          {
+            "name": 2016,
+            "type": "any"
+          },
+          {
+            "name": 2017,
+            "type": "any"
+          },
+          {
+            "name": 2018,
+            "type": "any"
+          },
+          {
+            "name": 2019,
+            "type": "any"
+          },
+          {
+            "name": 2020,
+            "type": "any"
+          },
+          {
+            "name": 2021,
+            "type": "any"
+          },
+          {
+            "name": 2022,
+            "type": "any"
+          },
+          {
+            "name": 2023,
+            "type": "any"
+          },
+          {
+            "name": 2024,
+            "type": "any"
+          },
+          {
+            "name": 2025,
+            "type": "any"
+          },
+          {
+            "name": 2026,
+            "type": "any"
+          },
+          {
+            "name": 2027,
+            "type": "any"
+          },
+          {
+            "name": 2028,
+            "type": "any"
+          },
+          {
+            "name": 2029,
+            "type": "any"
+          },
+          {
+            "name": 2030,
+            "type": "any"
+          },
+          {
+            "name": 2031,
+            "type": "any"
+          },
+          {
+            "name": 2032,
+            "type": "any"
+          },
+          {
+            "name": 2033,
+            "type": "any"
+          },
+          {
+            "name": 2034,
+            "type": "any"
+          },
+          {
+            "name": 2035,
+            "type": "any"
+          },
+          {
+            "name": 2036,
+            "type": "any"
+          },
+          {
+            "name": 2037,
+            "type": "any"
+          },
+          {
+            "name": 2038,
+            "type": "any"
+          },
+          {
+            "name": 2039,
+            "type": "any"
+          },
+          {
+            "name": 2040,
+            "type": "any"
+          },
+          {
+            "name": 2041,
+            "type": "any"
+          },
+          {
+            "name": 2042,
+            "type": "any"
+          },
+          {
+            "name": 2043,
+            "type": "any"
+          },
+          {
+            "name": 2044,
+            "type": "any"
+          },
+          {
+            "name": 2045,
+            "type": "any"
+          },
+          {
+            "name": 2046,
+            "type": "any"
+          },
+          {
+            "name": 2047,
+            "type": "any"
+          },
+          {
+            "name": 2048,
+            "type": "any"
+          },
+          {
+            "name": 2049,
+            "type": "any"
+          },
+          {
+            "name": 2050,
+            "type": "any"
+          },
+          {
+            "name": 2051,
+            "type": "any"
+          },
+          {
+            "name": 2052,
+            "type": "any"
+          },
+          {
+            "name": 2053,
+            "type": "any"
+          },
+          {
+            "name": 2054,
+            "type": "any"
+          },
+          {
+            "name": 2055,
+            "type": "any"
+          },
+          {
+            "name": 2056,
+            "type": "any"
+          },
+          {
+            "name": 2057,
+            "type": "any"
+          },
+          {
+            "name": 2058,
+            "type": "any"
+          },
+          {
+            "name": 2059,
+            "type": "any"
+          },
+          {
+            "name": 2060,
+            "type": "any"
+          },
+          {
+            "name": 2061,
+            "type": "any"
+          },
+          {
+            "name": 2062,
+            "type": "any"
+          },
+          {
+            "name": 2063,
+            "type": "any"
+          },
+          {
+            "name": 2064,
+            "type": "any"
+          },
+          {
+            "name": 2065,
+            "type": "any"
+          },
+          {
+            "name": 2066,
+            "type": "any"
+          },
+          {
+            "name": 2067,
+            "type": "any"
+          },
+          {
+            "name": 2068,
+            "type": "any"
+          },
+          {
+            "name": 2069,
+            "type": "any"
+          },
+          {
+            "name": 2070,
+            "type": "any"
+          },
+          {
+            "name": 2071,
+            "type": "any"
+          },
+          {
+            "name": 2072,
+            "type": "any"
+          },
+          {
+            "name": 2073,
+            "type": "any"
+          },
+          {
+            "name": 2074,
+            "type": "any"
+          },
+          {
+            "name": 2075,
+            "type": "any"
+          },
+          {
+            "name": 2076,
+            "type": "any"
+          },
+          {
+            "name": 2077,
+            "type": "any"
+          },
+          {
+            "name": 2078,
+            "type": "any"
+          },
+          {
+            "name": 2079,
+            "type": "any"
+          },
+          {
+            "name": 2080,
+            "type": "any"
+          },
+          {
+            "name": 2081,
+            "type": "any"
+          },
+          {
+            "name": 2082,
+            "type": "any"
+          },
+          {
+            "name": 2083,
+            "type": "any"
+          },
+          {
+            "name": 2084,
+            "type": "any"
+          },
+          {
+            "name": 2085,
+            "type": "any"
+          },
+          {
+            "name": 2086,
+            "type": "any"
+          },
+          {
+            "name": 2087,
+            "type": "any"
+          },
+          {
+            "name": 2088,
+            "type": "any"
+          },
+          {
+            "name": 2089,
+            "type": "any"
+          },
+          {
+            "name": 2090,
+            "type": "any"
+          },
+          {
+            "name": 2091,
+            "type": "any"
+          },
+          {
+            "name": 2092,
+            "type": "any"
+          },
+          {
+            "name": 2093,
+            "type": "any"
+          },
+          {
+            "name": 2094,
+            "type": "any"
+          },
+          {
+            "name": 2095,
+            "type": "any"
+          },
+          {
+            "name": 2096,
+            "type": "any"
+          },
+          {
+            "name": 2097,
+            "type": "any"
+          },
+          {
+            "name": 2098,
+            "type": "any"
+          },
+          {
+            "name": 2099,
+            "type": "any"
+          },
+          {
+            "name": 2100,
+            "type": "any"
+          }
+        ]
+      }
+    },
+    {
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "population-low-fertility",
+      "path": "population-low-fertility.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "index",
+            "type": "any"
+          },
+          {
+            "name": "variant",
+            "type": "any"
+          },
+          {
+            "name": "region",
+            "type": "any"
+          },
+          {
+            "name": "notes",
+            "type": "any"
+          },
+          {
+            "name": "country-code",
+            "type": "any"
+          },
+          {
+            "name": 2015,
+            "type": "any"
+          },
+          {
+            "name": 2016,
+            "type": "any"
+          },
+          {
+            "name": 2017,
+            "type": "any"
+          },
+          {
+            "name": 2018,
+            "type": "any"
+          },
+          {
+            "name": 2019,
+            "type": "any"
+          },
+          {
+            "name": 2020,
+            "type": "any"
+          },
+          {
+            "name": 2021,
+            "type": "any"
+          },
+          {
+            "name": 2022,
+            "type": "any"
+          },
+          {
+            "name": 2023,
+            "type": "any"
+          },
+          {
+            "name": 2024,
+            "type": "any"
+          },
+          {
+            "name": 2025,
+            "type": "any"
+          },
+          {
+            "name": 2026,
+            "type": "any"
+          },
+          {
+            "name": 2027,
+            "type": "any"
+          },
+          {
+            "name": 2028,
+            "type": "any"
+          },
+          {
+            "name": 2029,
+            "type": "any"
+          },
+          {
+            "name": 2030,
+            "type": "any"
+          },
+          {
+            "name": 2031,
+            "type": "any"
+          },
+          {
+            "name": 2032,
+            "type": "any"
+          },
+          {
+            "name": 2033,
+            "type": "any"
+          },
+          {
+            "name": 2034,
+            "type": "any"
+          },
+          {
+            "name": 2035,
+            "type": "any"
+          },
+          {
+            "name": 2036,
+            "type": "any"
+          },
+          {
+            "name": 2037,
+            "type": "any"
+          },
+          {
+            "name": 2038,
+            "type": "any"
+          },
+          {
+            "name": 2039,
+            "type": "any"
+          },
+          {
+            "name": 2040,
+            "type": "any"
+          },
+          {
+            "name": 2041,
+            "type": "any"
+          },
+          {
+            "name": 2042,
+            "type": "any"
+          },
+          {
+            "name": 2043,
+            "type": "any"
+          },
+          {
+            "name": 2044,
+            "type": "any"
+          },
+          {
+            "name": 2045,
+            "type": "any"
+          },
+          {
+            "name": 2046,
+            "type": "any"
+          },
+          {
+            "name": 2047,
+            "type": "any"
+          },
+          {
+            "name": 2048,
+            "type": "any"
+          },
+          {
+            "name": 2049,
+            "type": "any"
+          },
+          {
+            "name": 2050,
+            "type": "any"
+          },
+          {
+            "name": 2051,
+            "type": "any"
+          },
+          {
+            "name": 2052,
+            "type": "any"
+          },
+          {
+            "name": 2053,
+            "type": "any"
+          },
+          {
+            "name": 2054,
+            "type": "any"
+          },
+          {
+            "name": 2055,
+            "type": "any"
+          },
+          {
+            "name": 2056,
+            "type": "any"
+          },
+          {
+            "name": 2057,
+            "type": "any"
+          },
+          {
+            "name": 2058,
+            "type": "any"
+          },
+          {
+            "name": 2059,
+            "type": "any"
+          },
+          {
+            "name": 2060,
+            "type": "any"
+          },
+          {
+            "name": 2061,
+            "type": "any"
+          },
+          {
+            "name": 2062,
+            "type": "any"
+          },
+          {
+            "name": 2063,
+            "type": "any"
+          },
+          {
+            "name": 2064,
+            "type": "any"
+          },
+          {
+            "name": 2065,
+            "type": "any"
+          },
+          {
+            "name": 2066,
+            "type": "any"
+          },
+          {
+            "name": 2067,
+            "type": "any"
+          },
+          {
+            "name": 2068,
+            "type": "any"
+          },
+          {
+            "name": 2069,
+            "type": "any"
+          },
+          {
+            "name": 2070,
+            "type": "any"
+          },
+          {
+            "name": 2071,
+            "type": "any"
+          },
+          {
+            "name": 2072,
+            "type": "any"
+          },
+          {
+            "name": 2073,
+            "type": "any"
+          },
+          {
+            "name": 2074,
+            "type": "any"
+          },
+          {
+            "name": 2075,
+            "type": "any"
+          },
+          {
+            "name": 2076,
+            "type": "any"
+          },
+          {
+            "name": 2077,
+            "type": "any"
+          },
+          {
+            "name": 2078,
+            "type": "any"
+          },
+          {
+            "name": 2079,
+            "type": "any"
+          },
+          {
+            "name": 2080,
+            "type": "any"
+          },
+          {
+            "name": 2081,
+            "type": "any"
+          },
+          {
+            "name": 2082,
+            "type": "any"
+          },
+          {
+            "name": 2083,
+            "type": "any"
+          },
+          {
+            "name": 2084,
+            "type": "any"
+          },
+          {
+            "name": 2085,
+            "type": "any"
+          },
+          {
+            "name": 2086,
+            "type": "any"
+          },
+          {
+            "name": 2087,
+            "type": "any"
+          },
+          {
+            "name": 2088,
+            "type": "any"
+          },
+          {
+            "name": 2089,
+            "type": "any"
+          },
+          {
+            "name": 2090,
+            "type": "any"
+          },
+          {
+            "name": 2091,
+            "type": "any"
+          },
+          {
+            "name": 2092,
+            "type": "any"
+          },
+          {
+            "name": 2093,
+            "type": "any"
+          },
+          {
+            "name": 2094,
+            "type": "any"
+          },
+          {
+            "name": 2095,
+            "type": "any"
+          },
+          {
+            "name": 2096,
+            "type": "any"
+          },
+          {
+            "name": 2097,
+            "type": "any"
+          },
+          {
+            "name": 2098,
+            "type": "any"
+          },
+          {
+            "name": 2099,
+            "type": "any"
+          },
+          {
+            "name": 2100,
+            "type": "any"
+          }
+        ]
+      }
+    },
+    {
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "population-zero-migration",
+      "path": "population-zero-migration.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "index",
+            "type": "any"
+          },
+          {
+            "name": "variant",
+            "type": "any"
+          },
+          {
+            "name": "region",
+            "type": "any"
+          },
+          {
+            "name": "notes",
+            "type": "any"
+          },
+          {
+            "name": "country-code",
+            "type": "any"
+          },
+          {
+            "name": 2015,
+            "type": "any"
+          },
+          {
+            "name": 2016,
+            "type": "any"
+          },
+          {
+            "name": 2017,
+            "type": "any"
+          },
+          {
+            "name": 2018,
+            "type": "any"
+          },
+          {
+            "name": 2019,
+            "type": "any"
+          },
+          {
+            "name": 2020,
+            "type": "any"
+          },
+          {
+            "name": 2021,
+            "type": "any"
+          },
+          {
+            "name": 2022,
+            "type": "any"
+          },
+          {
+            "name": 2023,
+            "type": "any"
+          },
+          {
+            "name": 2024,
+            "type": "any"
+          },
+          {
+            "name": 2025,
+            "type": "any"
+          },
+          {
+            "name": 2026,
+            "type": "any"
+          },
+          {
+            "name": 2027,
+            "type": "any"
+          },
+          {
+            "name": 2028,
+            "type": "any"
+          },
+          {
+            "name": 2029,
+            "type": "any"
+          },
+          {
+            "name": 2030,
+            "type": "any"
+          },
+          {
+            "name": 2031,
+            "type": "any"
+          },
+          {
+            "name": 2032,
+            "type": "any"
+          },
+          {
+            "name": 2033,
+            "type": "any"
+          },
+          {
+            "name": 2034,
+            "type": "any"
+          },
+          {
+            "name": 2035,
+            "type": "any"
+          },
+          {
+            "name": 2036,
+            "type": "any"
+          },
+          {
+            "name": 2037,
+            "type": "any"
+          },
+          {
+            "name": 2038,
+            "type": "any"
+          },
+          {
+            "name": 2039,
+            "type": "any"
+          },
+          {
+            "name": 2040,
+            "type": "any"
+          },
+          {
+            "name": 2041,
+            "type": "any"
+          },
+          {
+            "name": 2042,
+            "type": "any"
+          },
+          {
+            "name": 2043,
+            "type": "any"
+          },
+          {
+            "name": 2044,
+            "type": "any"
+          },
+          {
+            "name": 2045,
+            "type": "any"
+          },
+          {
+            "name": 2046,
+            "type": "any"
+          },
+          {
+            "name": 2047,
+            "type": "any"
+          },
+          {
+            "name": 2048,
+            "type": "any"
+          },
+          {
+            "name": 2049,
+            "type": "any"
+          },
+          {
+            "name": 2050,
+            "type": "any"
+          },
+          {
+            "name": 2051,
+            "type": "any"
+          },
+          {
+            "name": 2052,
+            "type": "any"
+          },
+          {
+            "name": 2053,
+            "type": "any"
+          },
+          {
+            "name": 2054,
+            "type": "any"
+          },
+          {
+            "name": 2055,
+            "type": "any"
+          },
+          {
+            "name": 2056,
+            "type": "any"
+          },
+          {
+            "name": 2057,
+            "type": "any"
+          },
+          {
+            "name": 2058,
+            "type": "any"
+          },
+          {
+            "name": 2059,
+            "type": "any"
+          },
+          {
+            "name": 2060,
+            "type": "any"
+          },
+          {
+            "name": 2061,
+            "type": "any"
+          },
+          {
+            "name": 2062,
+            "type": "any"
+          },
+          {
+            "name": 2063,
+            "type": "any"
+          },
+          {
+            "name": 2064,
+            "type": "any"
+          },
+          {
+            "name": 2065,
+            "type": "any"
+          },
+          {
+            "name": 2066,
+            "type": "any"
+          },
+          {
+            "name": 2067,
+            "type": "any"
+          },
+          {
+            "name": 2068,
+            "type": "any"
+          },
+          {
+            "name": 2069,
+            "type": "any"
+          },
+          {
+            "name": 2070,
+            "type": "any"
+          },
+          {
+            "name": 2071,
+            "type": "any"
+          },
+          {
+            "name": 2072,
+            "type": "any"
+          },
+          {
+            "name": 2073,
+            "type": "any"
+          },
+          {
+            "name": 2074,
+            "type": "any"
+          },
+          {
+            "name": 2075,
+            "type": "any"
+          },
+          {
+            "name": 2076,
+            "type": "any"
+          },
+          {
+            "name": 2077,
+            "type": "any"
+          },
+          {
+            "name": 2078,
+            "type": "any"
+          },
+          {
+            "name": 2079,
+            "type": "any"
+          },
+          {
+            "name": 2080,
+            "type": "any"
+          },
+          {
+            "name": 2081,
+            "type": "any"
+          },
+          {
+            "name": 2082,
+            "type": "any"
+          },
+          {
+            "name": 2083,
+            "type": "any"
+          },
+          {
+            "name": 2084,
+            "type": "any"
+          },
+          {
+            "name": 2085,
+            "type": "any"
+          },
+          {
+            "name": 2086,
+            "type": "any"
+          },
+          {
+            "name": 2087,
+            "type": "any"
+          },
+          {
+            "name": 2088,
+            "type": "any"
+          },
+          {
+            "name": 2089,
+            "type": "any"
+          },
+          {
+            "name": 2090,
+            "type": "any"
+          },
+          {
+            "name": 2091,
+            "type": "any"
+          },
+          {
+            "name": 2092,
+            "type": "any"
+          },
+          {
+            "name": 2093,
+            "type": "any"
+          },
+          {
+            "name": 2094,
+            "type": "any"
+          },
+          {
+            "name": 2095,
+            "type": "any"
+          },
+          {
+            "name": 2096,
+            "type": "any"
+          },
+          {
+            "name": 2097,
+            "type": "any"
+          },
+          {
+            "name": 2098,
+            "type": "any"
+          },
+          {
+            "name": 2099,
+            "type": "any"
+          },
+          {
+            "name": 2100,
+            "type": "any"
+          }
+        ]
+      }
+    },
+    {
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "population-momentum",
+      "path": "population-momentum.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "index",
+            "type": "any"
+          },
+          {
+            "name": "variant",
+            "type": "any"
+          },
+          {
+            "name": "region",
+            "type": "any"
+          },
+          {
+            "name": "notes",
+            "type": "any"
+          },
+          {
+            "name": "country-code",
+            "type": "any"
+          },
+          {
+            "name": 2015,
+            "type": "any"
+          },
+          {
+            "name": 2016,
+            "type": "any"
+          },
+          {
+            "name": 2017,
+            "type": "any"
+          },
+          {
+            "name": 2018,
+            "type": "any"
+          },
+          {
+            "name": 2019,
+            "type": "any"
+          },
+          {
+            "name": 2020,
+            "type": "any"
+          },
+          {
+            "name": 2021,
+            "type": "any"
+          },
+          {
+            "name": 2022,
+            "type": "any"
+          },
+          {
+            "name": 2023,
+            "type": "any"
+          },
+          {
+            "name": 2024,
+            "type": "any"
+          },
+          {
+            "name": 2025,
+            "type": "any"
+          },
+          {
+            "name": 2026,
+            "type": "any"
+          },
+          {
+            "name": 2027,
+            "type": "any"
+          },
+          {
+            "name": 2028,
+            "type": "any"
+          },
+          {
+            "name": 2029,
+            "type": "any"
+          },
+          {
+            "name": 2030,
+            "type": "any"
+          },
+          {
+            "name": 2031,
+            "type": "any"
+          },
+          {
+            "name": 2032,
+            "type": "any"
+          },
+          {
+            "name": 2033,
+            "type": "any"
+          },
+          {
+            "name": 2034,
+            "type": "any"
+          },
+          {
+            "name": 2035,
+            "type": "any"
+          },
+          {
+            "name": 2036,
+            "type": "any"
+          },
+          {
+            "name": 2037,
+            "type": "any"
+          },
+          {
+            "name": 2038,
+            "type": "any"
+          },
+          {
+            "name": 2039,
+            "type": "any"
+          },
+          {
+            "name": 2040,
+            "type": "any"
+          },
+          {
+            "name": 2041,
+            "type": "any"
+          },
+          {
+            "name": 2042,
+            "type": "any"
+          },
+          {
+            "name": 2043,
+            "type": "any"
+          },
+          {
+            "name": 2044,
+            "type": "any"
+          },
+          {
+            "name": 2045,
+            "type": "any"
+          },
+          {
+            "name": 2046,
+            "type": "any"
+          },
+          {
+            "name": 2047,
+            "type": "any"
+          },
+          {
+            "name": 2048,
+            "type": "any"
+          },
+          {
+            "name": 2049,
+            "type": "any"
+          },
+          {
+            "name": 2050,
+            "type": "any"
+          },
+          {
+            "name": 2051,
+            "type": "any"
+          },
+          {
+            "name": 2052,
+            "type": "any"
+          },
+          {
+            "name": 2053,
+            "type": "any"
+          },
+          {
+            "name": 2054,
+            "type": "any"
+          },
+          {
+            "name": 2055,
+            "type": "any"
+          },
+          {
+            "name": 2056,
+            "type": "any"
+          },
+          {
+            "name": 2057,
+            "type": "any"
+          },
+          {
+            "name": 2058,
+            "type": "any"
+          },
+          {
+            "name": 2059,
+            "type": "any"
+          },
+          {
+            "name": 2060,
+            "type": "any"
+          },
+          {
+            "name": 2061,
+            "type": "any"
+          },
+          {
+            "name": 2062,
+            "type": "any"
+          },
+          {
+            "name": 2063,
+            "type": "any"
+          },
+          {
+            "name": 2064,
+            "type": "any"
+          },
+          {
+            "name": 2065,
+            "type": "any"
+          },
+          {
+            "name": 2066,
+            "type": "any"
+          },
+          {
+            "name": 2067,
+            "type": "any"
+          },
+          {
+            "name": 2068,
+            "type": "any"
+          },
+          {
+            "name": 2069,
+            "type": "any"
+          },
+          {
+            "name": 2070,
+            "type": "any"
+          },
+          {
+            "name": 2071,
+            "type": "any"
+          },
+          {
+            "name": 2072,
+            "type": "any"
+          },
+          {
+            "name": 2073,
+            "type": "any"
+          },
+          {
+            "name": 2074,
+            "type": "any"
+          },
+          {
+            "name": 2075,
+            "type": "any"
+          },
+          {
+            "name": 2076,
+            "type": "any"
+          },
+          {
+            "name": 2077,
+            "type": "any"
+          },
+          {
+            "name": 2078,
+            "type": "any"
+          },
+          {
+            "name": 2079,
+            "type": "any"
+          },
+          {
+            "name": 2080,
+            "type": "any"
+          },
+          {
+            "name": 2081,
+            "type": "any"
+          },
+          {
+            "name": 2082,
+            "type": "any"
+          },
+          {
+            "name": 2083,
+            "type": "any"
+          },
+          {
+            "name": 2084,
+            "type": "any"
+          },
+          {
+            "name": 2085,
+            "type": "any"
+          },
+          {
+            "name": 2086,
+            "type": "any"
+          },
+          {
+            "name": 2087,
+            "type": "any"
+          },
+          {
+            "name": 2088,
+            "type": "any"
+          },
+          {
+            "name": 2089,
+            "type": "any"
+          },
+          {
+            "name": 2090,
+            "type": "any"
+          },
+          {
+            "name": 2091,
+            "type": "any"
+          },
+          {
+            "name": 2092,
+            "type": "any"
+          },
+          {
+            "name": 2093,
+            "type": "any"
+          },
+          {
+            "name": 2094,
+            "type": "any"
+          },
+          {
+            "name": 2095,
+            "type": "any"
+          },
+          {
+            "name": 2096,
+            "type": "any"
+          },
+          {
+            "name": 2097,
+            "type": "any"
+          },
+          {
+            "name": 2098,
+            "type": "any"
+          },
+          {
+            "name": 2099,
+            "type": "any"
+          },
+          {
+            "name": 2100,
+            "type": "any"
+          }
+        ]
+      }
+    },
+    {
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "population-instant-replacement",
+      "path": "population-instant-replacement.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "index",
+            "type": "any"
+          },
+          {
+            "name": "variant",
+            "type": "any"
+          },
+          {
+            "name": "region",
+            "type": "any"
+          },
+          {
+            "name": "notes",
+            "type": "any"
+          },
+          {
+            "name": "country-code",
+            "type": "any"
+          },
+          {
+            "name": 2015,
+            "type": "any"
+          },
+          {
+            "name": 2016,
+            "type": "any"
+          },
+          {
+            "name": 2017,
+            "type": "any"
+          },
+          {
+            "name": 2018,
+            "type": "any"
+          },
+          {
+            "name": 2019,
+            "type": "any"
+          },
+          {
+            "name": 2020,
+            "type": "any"
+          },
+          {
+            "name": 2021,
+            "type": "any"
+          },
+          {
+            "name": 2022,
+            "type": "any"
+          },
+          {
+            "name": 2023,
+            "type": "any"
+          },
+          {
+            "name": 2024,
+            "type": "any"
+          },
+          {
+            "name": 2025,
+            "type": "any"
+          },
+          {
+            "name": 2026,
+            "type": "any"
+          },
+          {
+            "name": 2027,
+            "type": "any"
+          },
+          {
+            "name": 2028,
+            "type": "any"
+          },
+          {
+            "name": 2029,
+            "type": "any"
+          },
+          {
+            "name": 2030,
+            "type": "any"
+          },
+          {
+            "name": 2031,
+            "type": "any"
+          },
+          {
+            "name": 2032,
+            "type": "any"
+          },
+          {
+            "name": 2033,
+            "type": "any"
+          },
+          {
+            "name": 2034,
+            "type": "any"
+          },
+          {
+            "name": 2035,
+            "type": "any"
+          },
+          {
+            "name": 2036,
+            "type": "any"
+          },
+          {
+            "name": 2037,
+            "type": "any"
+          },
+          {
+            "name": 2038,
+            "type": "any"
+          },
+          {
+            "name": 2039,
+            "type": "any"
+          },
+          {
+            "name": 2040,
+            "type": "any"
+          },
+          {
+            "name": 2041,
+            "type": "any"
+          },
+          {
+            "name": 2042,
+            "type": "any"
+          },
+          {
+            "name": 2043,
+            "type": "any"
+          },
+          {
+            "name": 2044,
+            "type": "any"
+          },
+          {
+            "name": 2045,
+            "type": "any"
+          },
+          {
+            "name": 2046,
+            "type": "any"
+          },
+          {
+            "name": 2047,
+            "type": "any"
+          },
+          {
+            "name": 2048,
+            "type": "any"
+          },
+          {
+            "name": 2049,
+            "type": "any"
+          },
+          {
+            "name": 2050,
+            "type": "any"
+          },
+          {
+            "name": 2051,
+            "type": "any"
+          },
+          {
+            "name": 2052,
+            "type": "any"
+          },
+          {
+            "name": 2053,
+            "type": "any"
+          },
+          {
+            "name": 2054,
+            "type": "any"
+          },
+          {
+            "name": 2055,
+            "type": "any"
+          },
+          {
+            "name": 2056,
+            "type": "any"
+          },
+          {
+            "name": 2057,
+            "type": "any"
+          },
+          {
+            "name": 2058,
+            "type": "any"
+          },
+          {
+            "name": 2059,
+            "type": "any"
+          },
+          {
+            "name": 2060,
+            "type": "any"
+          },
+          {
+            "name": 2061,
+            "type": "any"
+          },
+          {
+            "name": 2062,
+            "type": "any"
+          },
+          {
+            "name": 2063,
+            "type": "any"
+          },
+          {
+            "name": 2064,
+            "type": "any"
+          },
+          {
+            "name": 2065,
+            "type": "any"
+          },
+          {
+            "name": 2066,
+            "type": "any"
+          },
+          {
+            "name": 2067,
+            "type": "any"
+          },
+          {
+            "name": 2068,
+            "type": "any"
+          },
+          {
+            "name": 2069,
+            "type": "any"
+          },
+          {
+            "name": 2070,
+            "type": "any"
+          },
+          {
+            "name": 2071,
+            "type": "any"
+          },
+          {
+            "name": 2072,
+            "type": "any"
+          },
+          {
+            "name": 2073,
+            "type": "any"
+          },
+          {
+            "name": 2074,
+            "type": "any"
+          },
+          {
+            "name": 2075,
+            "type": "any"
+          },
+          {
+            "name": 2076,
+            "type": "any"
+          },
+          {
+            "name": 2077,
+            "type": "any"
+          },
+          {
+            "name": 2078,
+            "type": "any"
+          },
+          {
+            "name": 2079,
+            "type": "any"
+          },
+          {
+            "name": 2080,
+            "type": "any"
+          },
+          {
+            "name": 2081,
+            "type": "any"
+          },
+          {
+            "name": 2082,
+            "type": "any"
+          },
+          {
+            "name": 2083,
+            "type": "any"
+          },
+          {
+            "name": 2084,
+            "type": "any"
+          },
+          {
+            "name": 2085,
+            "type": "any"
+          },
+          {
+            "name": 2086,
+            "type": "any"
+          },
+          {
+            "name": 2087,
+            "type": "any"
+          },
+          {
+            "name": 2088,
+            "type": "any"
+          },
+          {
+            "name": 2089,
+            "type": "any"
+          },
+          {
+            "name": 2090,
+            "type": "any"
+          },
+          {
+            "name": 2091,
+            "type": "any"
+          },
+          {
+            "name": 2092,
+            "type": "any"
+          },
+          {
+            "name": 2093,
+            "type": "any"
+          },
+          {
+            "name": 2094,
+            "type": "any"
+          },
+          {
+            "name": 2095,
+            "type": "any"
+          },
+          {
+            "name": 2096,
+            "type": "any"
+          },
+          {
+            "name": 2097,
+            "type": "any"
+          },
+          {
+            "name": 2098,
+            "type": "any"
+          },
+          {
+            "name": 2099,
+            "type": "any"
+          },
+          {
+            "name": 2100,
+            "type": "any"
+          }
+        ]
+      }
+    },
+    {
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "population-constant-fertility",
+      "path": "population-constant-fertility.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "index",
+            "type": "any"
+          },
+          {
+            "name": "variant",
+            "type": "any"
+          },
+          {
+            "name": "region",
+            "type": "any"
+          },
+          {
+            "name": "notes",
+            "type": "any"
+          },
+          {
+            "name": "country-code",
+            "type": "any"
+          },
+          {
+            "name": 2015,
+            "type": "any"
+          },
+          {
+            "name": 2016,
+            "type": "any"
+          },
+          {
+            "name": 2017,
+            "type": "any"
+          },
+          {
+            "name": 2018,
+            "type": "any"
+          },
+          {
+            "name": 2019,
+            "type": "any"
+          },
+          {
+            "name": 2020,
+            "type": "any"
+          },
+          {
+            "name": 2021,
+            "type": "any"
+          },
+          {
+            "name": 2022,
+            "type": "any"
+          },
+          {
+            "name": 2023,
+            "type": "any"
+          },
+          {
+            "name": 2024,
+            "type": "any"
+          },
+          {
+            "name": 2025,
+            "type": "any"
+          },
+          {
+            "name": 2026,
+            "type": "any"
+          },
+          {
+            "name": 2027,
+            "type": "any"
+          },
+          {
+            "name": 2028,
+            "type": "any"
+          },
+          {
+            "name": 2029,
+            "type": "any"
+          },
+          {
+            "name": 2030,
+            "type": "any"
+          },
+          {
+            "name": 2031,
+            "type": "any"
+          },
+          {
+            "name": 2032,
+            "type": "any"
+          },
+          {
+            "name": 2033,
+            "type": "any"
+          },
+          {
+            "name": 2034,
+            "type": "any"
+          },
+          {
+            "name": 2035,
+            "type": "any"
+          },
+          {
+            "name": 2036,
+            "type": "any"
+          },
+          {
+            "name": 2037,
+            "type": "any"
+          },
+          {
+            "name": 2038,
+            "type": "any"
+          },
+          {
+            "name": 2039,
+            "type": "any"
+          },
+          {
+            "name": 2040,
+            "type": "any"
+          },
+          {
+            "name": 2041,
+            "type": "any"
+          },
+          {
+            "name": 2042,
+            "type": "any"
+          },
+          {
+            "name": 2043,
+            "type": "any"
+          },
+          {
+            "name": 2044,
+            "type": "any"
+          },
+          {
+            "name": 2045,
+            "type": "any"
+          },
+          {
+            "name": 2046,
+            "type": "any"
+          },
+          {
+            "name": 2047,
+            "type": "any"
+          },
+          {
+            "name": 2048,
+            "type": "any"
+          },
+          {
+            "name": 2049,
+            "type": "any"
+          },
+          {
+            "name": 2050,
+            "type": "any"
+          },
+          {
+            "name": 2051,
+            "type": "any"
+          },
+          {
+            "name": 2052,
+            "type": "any"
+          },
+          {
+            "name": 2053,
+            "type": "any"
+          },
+          {
+            "name": 2054,
+            "type": "any"
+          },
+          {
+            "name": 2055,
+            "type": "any"
+          },
+          {
+            "name": 2056,
+            "type": "any"
+          },
+          {
+            "name": 2057,
+            "type": "any"
+          },
+          {
+            "name": 2058,
+            "type": "any"
+          },
+          {
+            "name": 2059,
+            "type": "any"
+          },
+          {
+            "name": 2060,
+            "type": "any"
+          },
+          {
+            "name": 2061,
+            "type": "any"
+          },
+          {
+            "name": 2062,
+            "type": "any"
+          },
+          {
+            "name": 2063,
+            "type": "any"
+          },
+          {
+            "name": 2064,
+            "type": "any"
+          },
+          {
+            "name": 2065,
+            "type": "any"
+          },
+          {
+            "name": 2066,
+            "type": "any"
+          },
+          {
+            "name": 2067,
+            "type": "any"
+          },
+          {
+            "name": 2068,
+            "type": "any"
+          },
+          {
+            "name": 2069,
+            "type": "any"
+          },
+          {
+            "name": 2070,
+            "type": "any"
+          },
+          {
+            "name": 2071,
+            "type": "any"
+          },
+          {
+            "name": 2072,
+            "type": "any"
+          },
+          {
+            "name": 2073,
+            "type": "any"
+          },
+          {
+            "name": 2074,
+            "type": "any"
+          },
+          {
+            "name": 2075,
+            "type": "any"
+          },
+          {
+            "name": 2076,
+            "type": "any"
+          },
+          {
+            "name": 2077,
+            "type": "any"
+          },
+          {
+            "name": 2078,
+            "type": "any"
+          },
+          {
+            "name": 2079,
+            "type": "any"
+          },
+          {
+            "name": 2080,
+            "type": "any"
+          },
+          {
+            "name": 2081,
+            "type": "any"
+          },
+          {
+            "name": 2082,
+            "type": "any"
+          },
+          {
+            "name": 2083,
+            "type": "any"
+          },
+          {
+            "name": 2084,
+            "type": "any"
+          },
+          {
+            "name": 2085,
+            "type": "any"
+          },
+          {
+            "name": 2086,
+            "type": "any"
+          },
+          {
+            "name": 2087,
+            "type": "any"
+          },
+          {
+            "name": 2088,
+            "type": "any"
+          },
+          {
+            "name": 2089,
+            "type": "any"
+          },
+          {
+            "name": 2090,
+            "type": "any"
+          },
+          {
+            "name": 2091,
+            "type": "any"
+          },
+          {
+            "name": 2092,
+            "type": "any"
+          },
+          {
+            "name": 2093,
+            "type": "any"
+          },
+          {
+            "name": 2094,
+            "type": "any"
+          },
+          {
+            "name": 2095,
+            "type": "any"
+          },
+          {
+            "name": 2096,
+            "type": "any"
+          },
+          {
+            "name": 2097,
+            "type": "any"
+          },
+          {
+            "name": 2098,
+            "type": "any"
+          },
+          {
+            "name": 2099,
+            "type": "any"
+          },
+          {
+            "name": 2100,
+            "type": "any"
+          }
+        ]
+      }
+    },
+    {
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "population-constant-mortality",
+      "path": "population-constant-mortality.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "index",
+            "type": "any"
+          },
+          {
+            "name": "variant",
+            "type": "any"
+          },
+          {
+            "name": "region",
+            "type": "any"
+          },
+          {
+            "name": "notes",
+            "type": "any"
+          },
+          {
+            "name": "country-code",
+            "type": "any"
+          },
+          {
+            "name": 2015,
+            "type": "any"
+          },
+          {
+            "name": 2016,
+            "type": "any"
+          },
+          {
+            "name": 2017,
+            "type": "any"
+          },
+          {
+            "name": 2018,
+            "type": "any"
+          },
+          {
+            "name": 2019,
+            "type": "any"
+          },
+          {
+            "name": 2020,
+            "type": "any"
+          },
+          {
+            "name": 2021,
+            "type": "any"
+          },
+          {
+            "name": 2022,
+            "type": "any"
+          },
+          {
+            "name": 2023,
+            "type": "any"
+          },
+          {
+            "name": 2024,
+            "type": "any"
+          },
+          {
+            "name": 2025,
+            "type": "any"
+          },
+          {
+            "name": 2026,
+            "type": "any"
+          },
+          {
+            "name": 2027,
+            "type": "any"
+          },
+          {
+            "name": 2028,
+            "type": "any"
+          },
+          {
+            "name": 2029,
+            "type": "any"
+          },
+          {
+            "name": 2030,
+            "type": "any"
+          },
+          {
+            "name": 2031,
+            "type": "any"
+          },
+          {
+            "name": 2032,
+            "type": "any"
+          },
+          {
+            "name": 2033,
+            "type": "any"
+          },
+          {
+            "name": 2034,
+            "type": "any"
+          },
+          {
+            "name": 2035,
+            "type": "any"
+          },
+          {
+            "name": 2036,
+            "type": "any"
+          },
+          {
+            "name": 2037,
+            "type": "any"
+          },
+          {
+            "name": 2038,
+            "type": "any"
+          },
+          {
+            "name": 2039,
+            "type": "any"
+          },
+          {
+            "name": 2040,
+            "type": "any"
+          },
+          {
+            "name": 2041,
+            "type": "any"
+          },
+          {
+            "name": 2042,
+            "type": "any"
+          },
+          {
+            "name": 2043,
+            "type": "any"
+          },
+          {
+            "name": 2044,
+            "type": "any"
+          },
+          {
+            "name": 2045,
+            "type": "any"
+          },
+          {
+            "name": 2046,
+            "type": "any"
+          },
+          {
+            "name": 2047,
+            "type": "any"
+          },
+          {
+            "name": 2048,
+            "type": "any"
+          },
+          {
+            "name": 2049,
+            "type": "any"
+          },
+          {
+            "name": 2050,
+            "type": "any"
+          },
+          {
+            "name": 2051,
+            "type": "any"
+          },
+          {
+            "name": 2052,
+            "type": "any"
+          },
+          {
+            "name": 2053,
+            "type": "any"
+          },
+          {
+            "name": 2054,
+            "type": "any"
+          },
+          {
+            "name": 2055,
+            "type": "any"
+          },
+          {
+            "name": 2056,
+            "type": "any"
+          },
+          {
+            "name": 2057,
+            "type": "any"
+          },
+          {
+            "name": 2058,
+            "type": "any"
+          },
+          {
+            "name": 2059,
+            "type": "any"
+          },
+          {
+            "name": 2060,
+            "type": "any"
+          },
+          {
+            "name": 2061,
+            "type": "any"
+          },
+          {
+            "name": 2062,
+            "type": "any"
+          },
+          {
+            "name": 2063,
+            "type": "any"
+          },
+          {
+            "name": 2064,
+            "type": "any"
+          },
+          {
+            "name": 2065,
+            "type": "any"
+          },
+          {
+            "name": 2066,
+            "type": "any"
+          },
+          {
+            "name": 2067,
+            "type": "any"
+          },
+          {
+            "name": 2068,
+            "type": "any"
+          },
+          {
+            "name": 2069,
+            "type": "any"
+          },
+          {
+            "name": 2070,
+            "type": "any"
+          },
+          {
+            "name": 2071,
+            "type": "any"
+          },
+          {
+            "name": 2072,
+            "type": "any"
+          },
+          {
+            "name": 2073,
+            "type": "any"
+          },
+          {
+            "name": 2074,
+            "type": "any"
+          },
+          {
+            "name": 2075,
+            "type": "any"
+          },
+          {
+            "name": 2076,
+            "type": "any"
+          },
+          {
+            "name": 2077,
+            "type": "any"
+          },
+          {
+            "name": 2078,
+            "type": "any"
+          },
+          {
+            "name": 2079,
+            "type": "any"
+          },
+          {
+            "name": 2080,
+            "type": "any"
+          },
+          {
+            "name": 2081,
+            "type": "any"
+          },
+          {
+            "name": 2082,
+            "type": "any"
+          },
+          {
+            "name": 2083,
+            "type": "any"
+          },
+          {
+            "name": 2084,
+            "type": "any"
+          },
+          {
+            "name": 2085,
+            "type": "any"
+          },
+          {
+            "name": 2086,
+            "type": "any"
+          },
+          {
+            "name": 2087,
+            "type": "any"
+          },
+          {
+            "name": 2088,
+            "type": "any"
+          },
+          {
+            "name": 2089,
+            "type": "any"
+          },
+          {
+            "name": 2090,
+            "type": "any"
+          },
+          {
+            "name": 2091,
+            "type": "any"
+          },
+          {
+            "name": 2092,
+            "type": "any"
+          },
+          {
+            "name": 2093,
+            "type": "any"
+          },
+          {
+            "name": 2094,
+            "type": "any"
+          },
+          {
+            "name": 2095,
+            "type": "any"
+          },
+          {
+            "name": 2096,
+            "type": "any"
+          },
+          {
+            "name": 2097,
+            "type": "any"
+          },
+          {
+            "name": 2098,
+            "type": "any"
+          },
+          {
+            "name": 2099,
+            "type": "any"
+          },
+          {
+            "name": 2100,
+            "type": "any"
+          }
+        ]
+      }
+    },
+    {
+      "encoding": "utf-8",
+      "format": "csv",
+      "name": "population-no-change",
+      "path": "population-no-change.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "index",
+            "type": "any"
+          },
+          {
+            "name": "variant",
+            "type": "any"
+          },
+          {
+            "name": "region",
+            "type": "any"
+          },
+          {
+            "name": "notes",
+            "type": "any"
+          },
+          {
+            "name": "country-code",
+            "type": "any"
+          },
+          {
+            "name": 2015,
+            "type": "any"
+          },
+          {
+            "name": 2016,
+            "type": "any"
+          },
+          {
+            "name": 2017,
+            "type": "any"
+          },
+          {
+            "name": 2018,
+            "type": "any"
+          },
+          {
+            "name": 2019,
+            "type": "any"
+          },
+          {
+            "name": 2020,
+            "type": "any"
+          },
+          {
+            "name": 2021,
+            "type": "any"
+          },
+          {
+            "name": 2022,
+            "type": "any"
+          },
+          {
+            "name": 2023,
+            "type": "any"
+          },
+          {
+            "name": 2024,
+            "type": "any"
+          },
+          {
+            "name": 2025,
+            "type": "any"
+          },
+          {
+            "name": 2026,
+            "type": "any"
+          },
+          {
+            "name": 2027,
+            "type": "any"
+          },
+          {
+            "name": 2028,
+            "type": "any"
+          },
+          {
+            "name": 2029,
+            "type": "any"
+          },
+          {
+            "name": 2030,
+            "type": "any"
+          },
+          {
+            "name": 2031,
+            "type": "any"
+          },
+          {
+            "name": 2032,
+            "type": "any"
+          },
+          {
+            "name": 2033,
+            "type": "any"
+          },
+          {
+            "name": 2034,
+            "type": "any"
+          },
+          {
+            "name": 2035,
+            "type": "any"
+          },
+          {
+            "name": 2036,
+            "type": "any"
+          },
+          {
+            "name": 2037,
+            "type": "any"
+          },
+          {
+            "name": 2038,
+            "type": "any"
+          },
+          {
+            "name": 2039,
+            "type": "any"
+          },
+          {
+            "name": 2040,
+            "type": "any"
+          },
+          {
+            "name": 2041,
+            "type": "any"
+          },
+          {
+            "name": 2042,
+            "type": "any"
+          },
+          {
+            "name": 2043,
+            "type": "any"
+          },
+          {
+            "name": 2044,
+            "type": "any"
+          },
+          {
+            "name": 2045,
+            "type": "any"
+          },
+          {
+            "name": 2046,
+            "type": "any"
+          },
+          {
+            "name": 2047,
+            "type": "any"
+          },
+          {
+            "name": 2048,
+            "type": "any"
+          },
+          {
+            "name": 2049,
+            "type": "any"
+          },
+          {
+            "name": 2050,
+            "type": "any"
+          },
+          {
+            "name": 2051,
+            "type": "any"
+          },
+          {
+            "name": 2052,
+            "type": "any"
+          },
+          {
+            "name": 2053,
+            "type": "any"
+          },
+          {
+            "name": 2054,
+            "type": "any"
+          },
+          {
+            "name": 2055,
+            "type": "any"
+          },
+          {
+            "name": 2056,
+            "type": "any"
+          },
+          {
+            "name": 2057,
+            "type": "any"
+          },
+          {
+            "name": 2058,
+            "type": "any"
+          },
+          {
+            "name": 2059,
+            "type": "any"
+          },
+          {
+            "name": 2060,
+            "type": "any"
+          },
+          {
+            "name": 2061,
+            "type": "any"
+          },
+          {
+            "name": 2062,
+            "type": "any"
+          },
+          {
+            "name": 2063,
+            "type": "any"
+          },
+          {
+            "name": 2064,
+            "type": "any"
+          },
+          {
+            "name": 2065,
+            "type": "any"
+          },
+          {
+            "name": 2066,
+            "type": "any"
+          },
+          {
+            "name": 2067,
+            "type": "any"
+          },
+          {
+            "name": 2068,
+            "type": "any"
+          },
+          {
+            "name": 2069,
+            "type": "any"
+          },
+          {
+            "name": 2070,
+            "type": "any"
+          },
+          {
+            "name": 2071,
+            "type": "any"
+          },
+          {
+            "name": 2072,
+            "type": "any"
+          },
+          {
+            "name": 2073,
+            "type": "any"
+          },
+          {
+            "name": 2074,
+            "type": "any"
+          },
+          {
+            "name": 2075,
+            "type": "any"
+          },
+          {
+            "name": 2076,
+            "type": "any"
+          },
+          {
+            "name": 2077,
+            "type": "any"
+          },
+          {
+            "name": 2078,
+            "type": "any"
+          },
+          {
+            "name": 2079,
+            "type": "any"
+          },
+          {
+            "name": 2080,
+            "type": "any"
+          },
+          {
+            "name": 2081,
+            "type": "any"
+          },
+          {
+            "name": 2082,
+            "type": "any"
+          },
+          {
+            "name": 2083,
+            "type": "any"
+          },
+          {
+            "name": 2084,
+            "type": "any"
+          },
+          {
+            "name": 2085,
+            "type": "any"
+          },
+          {
+            "name": 2086,
+            "type": "any"
+          },
+          {
+            "name": 2087,
+            "type": "any"
+          },
+          {
+            "name": 2088,
+            "type": "any"
+          },
+          {
+            "name": 2089,
+            "type": "any"
+          },
+          {
+            "name": 2090,
+            "type": "any"
+          },
+          {
+            "name": 2091,
+            "type": "any"
+          },
+          {
+            "name": 2092,
+            "type": "any"
+          },
+          {
+            "name": 2093,
+            "type": "any"
+          },
+          {
+            "name": 2094,
+            "type": "any"
+          },
+          {
+            "name": 2095,
+            "type": "any"
+          },
+          {
+            "name": 2096,
+            "type": "any"
+          },
+          {
+            "name": 2097,
+            "type": "any"
+          },
+          {
+            "name": 2098,
+            "type": "any"
+          },
+          {
+            "name": 2099,
+            "type": "any"
+          },
+          {
+            "name": 2100,
+            "type": "any"
+          }
+        ]
+      }
+    }
+  ],
   "views": [
     {
       "name": "population-growth-estimates",
