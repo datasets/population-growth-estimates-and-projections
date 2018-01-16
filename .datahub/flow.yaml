@@ -1,8 +1,8 @@
 meta:
   dataset: population-growth-estimates-and-projections
   findability: published
-  owner: zelima
-  ownerid: 81429cbbddcfb180f54c142fac32f83b
+  owner: core
+  ownerid: core
   version: 1
 inputs:
 - kind: datapackage
