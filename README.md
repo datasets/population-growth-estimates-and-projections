@@ -13,154 +13,19 @@ Data comes from [United Nations' Population Division datasets](https://esa.un.or
 * Zero Migration variant, 2015 - 2100
 * Constant Mortality variant, 2015 - 2100
 
-## Processing
+## Preparation
 
-1. You will need python 3.6 and [datapackage-pipelines](https://github.com/frictionlessdata/datapackage-pipelines) to process the data.
-2. Create `pipeline-spec.yaml` and copy from below.
-3. run `dpp run population-growth`
+You will need Python 3.6 or greater and dataflows library to run the script
 
-```yaml
-population-growth:
-  pipeline:
-    -
-      run: add_resource
-      parameters:
-        name: population-estimates
-        url: https://esa.un.org/unpd/wpp/DVD/Files/1_Indicators%20(Standard)/EXCEL_FILES/1_Population/WPP2017_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES.xlsx
-        format: xlsx
-        skip_rows: 17
-        headers: [index, variant, region, notes, country-code, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015]
-        sheet: ESTIMATES
-    -
-      run: add_resource
-      parameters:
-        name: population-medium-fertility
-        url: https://esa.un.org/unpd/wpp/DVD/Files/1_Indicators%20(Standard)/EXCEL_FILES/1_Population/WPP2017_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES.xlsx
-        format: xlsx
-        skip_rows: 17
-        headers: [index, variant, region, notes, country-code, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015]
-        sheet: MEDIUM VARIANT
-    -
-      run: add_resource
-      parameters:
-        name: population-high-fertility
-        url: https://esa.un.org/unpd/wpp/DVD/Files/1_Indicators%20(Standard)/EXCEL_FILES/1_Population/WPP2017_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES.xlsx
-        format: xlsx
-        skip_rows: 17
-        headers: [index, variant, region, notes, country-code, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015]
-        sheet: HIGH VARIANT
-    -
-      run: add_resource
-      parameters:
-        name: population-low-fertility
-        url: https://esa.un.org/unpd/wpp/DVD/Files/1_Indicators%20(Standard)/EXCEL_FILES/1_Population/WPP2017_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES.xlsx
-        format: xlsx
-        skip_rows: 17
-        headers: [index, variant, region, notes, country-code, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015]
-        sheet: LOW VARIANT
-    -
-      run: add_resource
-      parameters:
-        name: population-constant-fertility
-        url: https://esa.un.org/unpd/wpp/DVD/Files/1_Indicators%20(Standard)/EXCEL_FILES/1_Population/WPP2017_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES.xlsx
-        format: xlsx
-        skip_rows: 17
-        headers: [index, variant, region, notes, country-code, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015]
-        sheet: CONSTANT-FERTILITY
-    -
-      run: add_resource
-      parameters:
-        name: population-instant-replacement
-        url: https://esa.un.org/unpd/wpp/DVD/Files/1_Indicators%20(Standard)/EXCEL_FILES/1_Population/WPP2017_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES.xlsx
-        format: xlsx
-        skip_rows: 17
-        headers: [index, variant, region, notes, country-code, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015]
-        sheet: INSTANT-REPLACEMENT
-    -
-      run: add_resource
-      parameters:
-        name: population-momentum
-        url: https://esa.un.org/unpd/wpp/DVD/Files/1_Indicators%20(Standard)/EXCEL_FILES/1_Population/WPP2017_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES.xlsx
-        format: xlsx
-        skip_rows: 17
-        headers: [index, variant, region, notes, country-code, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015]
-        sheet: MOMENTUM
-    -
-      run: add_resource
-      parameters:
-        name: population-zero-migration
-        url: https://esa.un.org/unpd/wpp/DVD/Files/1_Indicators%20(Standard)/EXCEL_FILES/1_Population/WPP2017_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES.xlsx
-        format: xlsx
-        skip_rows: 17
-        headers: [index, variant, region, notes, country-code, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015]
-        sheet: ZERO-MIGRATION
-    -
-      run: add_resource
-      parameters:
-        name: population-constant-mortality
-        url: https://esa.un.org/unpd/wpp/DVD/Files/1_Indicators%20(Standard)/EXCEL_FILES/1_Population/WPP2017_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES.xlsx
-        format: xlsx
-        skip_rows: 17
-        headers: [index, variant, region, notes, country-code, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015]
-        sheet: CONSTANT-MORTALITY
-    -
-      run: add_resource
-      parameters:
-        name: population-no-change
-        url: https://esa.un.org/unpd/wpp/DVD/Files/1_Indicators%20(Standard)/EXCEL_FILES/1_Population/WPP2017_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES.xlsx
-        format: xlsx
-        skip_rows: 17
-        headers: [index, variant, region, notes, country-code, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015]
-        sheet: NO CHANGE
-    -
-      run: stream_remote_resources
-    -
-      run: delete_fields
-      parameters:
-        resources:
-          - population-estimates
-          - population-medium-fertility
-          - population-high-fertility
-          - population-low-fertility
-          - population-zero-migration
-          - population-momentum
-          - population-instant-replacement
-          - population-constant-fertility
-          - population-constant-mortality
-          - population-no-change
-        fields:
-          - index
-          - variant
-          - notes
-          - country-code
-    -
-      run: unpivot
-      parameters:
-        resources:
-          - population-estimates
-          - population-medium-fertility
-          - population-high-fertility
-          - population-low-fertility
-          - population-zero-migration
-          - population-momentum
-          - population-instant-replacement
-          - population-constant-fertility
-          - population-constant-mortality
-          - population-no-change
-        extraKeyFields:
-          -
-            name: year
-            type: year
-        extraValueField:
-          name: population
-          type: number
-        unpivot:
-          -
-            name: ([0-9]{4})
-            keys:
-              year: \1
-    -
-      run: dump.to_path
+To update the data run the process script locally:
+
+```
+# Install dataflows
+pip install dataflows
+
+# Run the script
+python flows/run.py
+Several steps will be done to get the final data.
 ```
 
 ## Licence
