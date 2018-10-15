@@ -1,5 +1,6 @@
 from dataflows import Flow, PackageWrapper, ResourceWrapper, validate
-from dataflows import add_metadata, dump_to_path, load, set_type, delete_fields, unpivot, printer
+from dataflows import add_metadata, dump_to_path, load, set_type
+from dataflows import add_computed_field, delete_fields, unpivot, printer
 
 resource_names = [
     'population-estimates',
@@ -39,7 +40,7 @@ population_estimates = Flow(
                 "resources": [
                     {
                         "name": "population-estimates",
-                        "transform": [{"expression": "data['region'] === 'WORLD'","type": "filter"}]
+                        "transform": [{"expression": "data['Region'] === 'WORLD'","type": "filter"}]
                     }
                 ],
                 "spec": {"group": "year","series": ["population"],"type": "line"},
@@ -51,7 +52,7 @@ population_estimates = Flow(
                 "resources": [
                     {
                         "name": "population-no-change",
-                        "transform": [{"expression": "data['region'] === 'WORLD'", "type": "filter"}]
+                        "transform": [{"expression": "data['Region'] === 'WORLD'", "type": "filter"}]
                     }
                 ],
                 "spec": {"group": "year","series": ["population"],"type": "line"},
@@ -63,7 +64,7 @@ population_estimates = Flow(
                 "resources": [
                     {
                         "name": "population-low-fertility",
-                        "transform": [{"expression": "data['region'] === 'WORLD'","type": "filter"}]
+                        "transform": [{"expression": "data['Region'] === 'WORLD'","type": "filter"}]
                     }
                 ],
                 "spec": {"group": "year","series": ["population"],"type": "line"},
@@ -75,7 +76,7 @@ population_estimates = Flow(
                 "resources": [
                     {
                         "name": "population-medium-fertility",
-                        "transform": [{"expression": "data['region'] === 'WORLD'","type": "filter"}]
+                        "transform": [{"expression": "data['Region'] === 'WORLD'","type": "filter"}]
                     }
                 ],
                 "spec": {"group": "year","series": ["population"],"type": "line"},
@@ -88,7 +89,7 @@ population_estimates = Flow(
                     {
                         "name": "population-high-fertility",
                         "transform": [
-                            {"expression": "data['region'] === 'WORLD'","type": "filter"}]
+                            {"expression": "data['Region'] === 'WORLD'","type": "filter"}]
                     }
                 ],
                 "spec": {"group": "year","series": ["population"],"type": "line"},
@@ -121,6 +122,31 @@ population_estimates = Flow(
         extra_value={'name': 'population', 'type': 'number'},
         resources=resource_names[1:]
     ),
+    add_computed_field(fields=[
+        {
+        "operation": "format",
+        "target": "Region",
+        "with": "{Region, subregion, country or area *}"
+        },
+        {
+        "operation": "format",
+        "target": "Country Code",
+        "with": "{Country code}"
+        },
+        {
+        "operation": "format",
+        "target": "Year",
+        "with": "{year}"
+        },
+        {
+        "operation": "format",
+        "target": "Population",
+        "with": "{population}"
+        }
+    ]),
+    delete_fields(fields=[
+        'Region, subregion, country or area *', 'Country code', 'year', 'population'
+    ]),
     validate(),
     printer(),
     dump_to_path(),

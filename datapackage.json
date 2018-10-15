@@ -1,249 +1,363 @@
 {
+  "bytes": 128957976,
+  "count_of_rows": 1919736,
+  "descriptor": "Total Population - Both Sexes. De facto population in a country, area or region",
+  "hash": "7b94a8460f46a89b6947a14027f6f977",
   "name": "population-growth-estimates-and-projections",
-  "title": "Population Growth",
-  "description": "Total Population - Both Sexes. De facto population in a country, area or region",
+  "profile": "data-package",
   "resources": [
     {
       "encoding": "utf-8",
-      "format": "csv",
+      "format": "xlsx",
+      "mediatype": "text/xlsx",
       "name": "population-estimates",
       "path": "data/population-estimates.csv",
+      "profile": "tabular-data-resource",
       "schema": {
         "fields": [
           {
-            "name": "region",
+            "format": "default",
+            "name": "Region, subregion, country or area *",
             "type": "string"
           },
           {
+            "format": "default",
+            "name": "Country code",
+            "type": "integer"
+          },
+          {
+            "format": "default",
             "name": "year",
             "type": "year"
           },
           {
-            "decimalChar": ".",
-            "groupChar": "",
+            "format": "default",
             "name": "population",
             "type": "number"
           }
+        ],
+        "missingValues": [
+          ""
         ]
       }
     },
     {
       "encoding": "utf-8",
-      "format": "csv",
-      "name": "population-medium-fertility",
-      "path": "data/population-medium-fertility.csv",
-      "schema": {
-        "fields": [
-          {
-            "name": "region",
-            "type": "string"
-          },
-          {
-            "name": "year",
-            "type": "year"
-          },
-          {
-            "decimalChar": ".",
-            "groupChar": "",
-            "name": "population",
-            "type": "number"
-          }
-        ]
-      }
-    },
-    {
-      "encoding": "utf-8",
-      "format": "csv",
-      "name": "population-high-fertility",
-      "path": "data/population-high-fertility.csv",
-      "schema": {
-        "fields": [
-          {
-            "name": "region",
-            "type": "string"
-          },
-          {
-            "name": "year",
-            "type": "year"
-          },
-          {
-            "decimalChar": ".",
-            "groupChar": "",
-            "name": "population",
-            "type": "number"
-          }
-        ]
-      }
-    },
-    {
-      "encoding": "utf-8",
-      "format": "csv",
+      "format": "xlsx",
+      "mediatype": "text/xlsx",
       "name": "population-low-fertility",
       "path": "data/population-low-fertility.csv",
+      "profile": "tabular-data-resource",
       "schema": {
         "fields": [
           {
-            "name": "region",
+            "format": "default",
+            "name": "Region, subregion, country or area *",
             "type": "string"
           },
           {
+            "format": "default",
+            "name": "Country code",
+            "type": "integer"
+          },
+          {
+            "format": "default",
             "name": "year",
             "type": "year"
           },
           {
-            "decimalChar": ".",
-            "groupChar": "",
+            "format": "default",
             "name": "population",
             "type": "number"
           }
+        ],
+        "missingValues": [
+          ""
         ]
       }
     },
     {
       "encoding": "utf-8",
-      "format": "csv",
+      "format": "xlsx",
+      "mediatype": "text/xlsx",
+      "name": "population-medium-fertility",
+      "path": "data/population-medium-fertility.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Region, subregion, country or area *",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Country code",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "year",
+            "type": "year"
+          },
+          {
+            "format": "default",
+            "name": "population",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "encoding": "utf-8",
+      "format": "xlsx",
+      "mediatype": "text/xlsx",
+      "name": "population-high-fertility",
+      "path": "data/population-high-fertility.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Region, subregion, country or area *",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Country code",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "year",
+            "type": "year"
+          },
+          {
+            "format": "default",
+            "name": "population",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "encoding": "utf-8",
+      "format": "xlsx",
+      "mediatype": "text/xlsx",
       "name": "population-constant-fertility",
       "path": "data/population-constant-fertility.csv",
+      "profile": "tabular-data-resource",
       "schema": {
         "fields": [
           {
-            "name": "region",
+            "format": "default",
+            "name": "Region, subregion, country or area *",
             "type": "string"
           },
           {
+            "format": "default",
+            "name": "Country code",
+            "type": "integer"
+          },
+          {
+            "format": "default",
             "name": "year",
             "type": "year"
           },
           {
-            "decimalChar": ".",
-            "groupChar": "",
+            "format": "default",
             "name": "population",
             "type": "number"
           }
+        ],
+        "missingValues": [
+          ""
         ]
       }
     },
     {
       "encoding": "utf-8",
-      "format": "csv",
+      "format": "xlsx",
+      "mediatype": "text/xlsx",
       "name": "population-instant-replacement",
       "path": "data/population-instant-replacement.csv",
+      "profile": "tabular-data-resource",
       "schema": {
         "fields": [
           {
-            "name": "region",
+            "format": "default",
+            "name": "Region, subregion, country or area *",
             "type": "string"
           },
           {
+            "format": "default",
+            "name": "Country code",
+            "type": "integer"
+          },
+          {
+            "format": "default",
             "name": "year",
             "type": "year"
           },
           {
-            "decimalChar": ".",
-            "groupChar": "",
+            "format": "default",
             "name": "population",
             "type": "number"
           }
+        ],
+        "missingValues": [
+          ""
         ]
       }
     },
     {
       "encoding": "utf-8",
-      "format": "csv",
+      "format": "xlsx",
+      "mediatype": "text/xlsx",
       "name": "population-momentum",
       "path": "data/population-momentum.csv",
+      "profile": "tabular-data-resource",
       "schema": {
         "fields": [
           {
-            "name": "region",
+            "format": "default",
+            "name": "Region, subregion, country or area *",
             "type": "string"
           },
           {
+            "format": "default",
+            "name": "Country code",
+            "type": "integer"
+          },
+          {
+            "format": "default",
             "name": "year",
             "type": "year"
           },
           {
-            "decimalChar": ".",
-            "groupChar": "",
+            "format": "default",
             "name": "population",
             "type": "number"
           }
+        ],
+        "missingValues": [
+          ""
         ]
       }
     },
     {
       "encoding": "utf-8",
-      "format": "csv",
+      "format": "xlsx",
+      "mediatype": "text/xlsx",
       "name": "population-zero-migration",
       "path": "data/population-zero-migration.csv",
+      "profile": "tabular-data-resource",
       "schema": {
         "fields": [
           {
-            "name": "region",
+            "format": "default",
+            "name": "Region, subregion, country or area *",
             "type": "string"
           },
           {
+            "format": "default",
+            "name": "Country code",
+            "type": "integer"
+          },
+          {
+            "format": "default",
             "name": "year",
             "type": "year"
           },
           {
-            "decimalChar": ".",
-            "groupChar": "",
+            "format": "default",
             "name": "population",
             "type": "number"
           }
+        ],
+        "missingValues": [
+          ""
         ]
       }
     },
     {
       "encoding": "utf-8",
-      "format": "csv",
+      "format": "xlsx",
+      "mediatype": "text/xlsx",
       "name": "population-constant-mortality",
       "path": "data/population-constant-mortality.csv",
+      "profile": "tabular-data-resource",
       "schema": {
         "fields": [
           {
-            "name": "region",
+            "format": "default",
+            "name": "Region, subregion, country or area *",
             "type": "string"
           },
           {
+            "format": "default",
+            "name": "Country code",
+            "type": "integer"
+          },
+          {
+            "format": "default",
             "name": "year",
             "type": "year"
           },
           {
-            "decimalChar": ".",
-            "groupChar": "",
+            "format": "default",
             "name": "population",
             "type": "number"
           }
+        ],
+        "missingValues": [
+          ""
         ]
       }
     },
     {
       "encoding": "utf-8",
-      "format": "csv",
+      "format": "xlsx",
+      "mediatype": "text/xlsx",
       "name": "population-no-change",
       "path": "data/population-no-change.csv",
+      "profile": "tabular-data-resource",
       "schema": {
         "fields": [
           {
-            "name": "region",
+            "format": "default",
+            "name": "Region, subregion, country or area *",
             "type": "string"
           },
           {
+            "format": "default",
+            "name": "Country code",
+            "type": "integer"
+          },
+          {
+            "format": "default",
             "name": "year",
             "type": "year"
           },
           {
-            "decimalChar": ".",
-            "groupChar": "",
+            "format": "default",
             "name": "population",
             "type": "number"
           }
+        ],
+        "missingValues": [
+          ""
         ]
       }
     }
   ],
+  "title": "Population Growth",
   "views": [
     {
       "name": "population-growth-estimates",
