@@ -1,3 +1,5 @@
+import os
+
 from dataflows import Flow, PackageWrapper, ResourceWrapper, validate
 from dataflows import add_metadata, dump_to_path, load, set_type
 from dataflows import add_computed_field, delete_fields, unpivot, printer
@@ -160,6 +162,8 @@ population_estimates = Flow(
     dump_to_path(),
 )
 
+def flow(parameters, datapackage, resources, stats):
+    return population_estimates
 
 if __name__ == '__main__':
     population_estimates.process()
