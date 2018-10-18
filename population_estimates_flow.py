@@ -17,10 +17,17 @@ resource_names = [
 
 source_url = 'https://esa.un.org/unpd/wpp/DVD/Files/1_Indicators%20(Standard)/EXCEL_FILES/1_Population/WPP2017_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES.xlsx'
 
+
+def readme(fpath='README.md'):
+    if os.path.exists(fpath):
+        return open(fpath).read()
+
+
 def rename_resources(package: PackageWrapper):
     for idx, name in enumerate(resource_names):
         package.pkg.descriptor['resources'][idx]['name'] = name
         package.pkg.descriptor['resources'][idx]['path'] = 'data/%s.csv' % name
+        package.pkg.descriptor['resources'][idx]['dpp:streaming'] = True
 
     yield package.pkg
     res_iter = iter(package)
@@ -96,7 +103,8 @@ population_estimates = Flow(
                 "specType": "simple",
                 "title": "Population Growth - World Projections (High Fertility)"
             }
-        ]
+        ],
+        readme=readme()
     ),
     load(source_url,format='xlsx',sheet='ESTIMATES',headers=17),
     load(source_url,format='xlsx',sheet='LOW VARIANT',headers=17),
