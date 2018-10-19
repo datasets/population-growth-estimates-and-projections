@@ -1,8 +1,8 @@
 import os
 
 from dataflows import Flow, PackageWrapper, ResourceWrapper, validate
-from dataflows import add_metadata, dump_to_path, load, set_type
-from dataflows import add_computed_field, delete_fields, unpivot, printer
+from dataflows import add_metadata, load, set_type
+from dataflows import add_computed_field, delete_fields, unpivot
 
 resource_names = [
     'population-estimates',
@@ -157,9 +157,7 @@ population_estimates = Flow(
     delete_fields(fields=[
         'Region, subregion, country or area *', 'Country code', 'year', 'population'
     ]),
-    validate(),
-    printer(),
-    dump_to_path(),
+    validate()
 )
 
 def flow(parameters, datapackage, resources, stats):
