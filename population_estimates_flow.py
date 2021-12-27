@@ -1,8 +1,8 @@
 import os
 
-from dataflows import Flow, PackageWrapper, ResourceWrapper, validate
-from dataflows import add_metadata, load, set_type
-from dataflows import add_computed_field, delete_fields, unpivot
+from dataflows import Flow, PackageWrapper, validate, checkpoint
+from dataflows import add_metadata, load
+from dataflows import add_computed_field, delete_fields, unpivot, dump_to_path
 
 resource_names = [
     'population-estimates',
@@ -17,7 +17,7 @@ resource_names = [
     'population-no-change'
 ]
 
-source_url = 'https://esa.un.org/unpd/wpp/DVD/Files/1_Indicators%20(Standard)/EXCEL_FILES/1_Population/WPP2017_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES.xlsx'
+source_url = 'https://population.un.org/wpp/Download/Files/1_Indicators%20(Standard)/EXCEL_FILES/1_Population/WPP2019_POP_F01_1_TOTAL_POPULATION_BOTH_SEXES.xlsx'
 
 
 def readme(fpath='README.md'):
@@ -118,6 +118,7 @@ population_estimates = Flow(
     load(source_url,format='xlsx',sheet='MOMENTUM',headers=17),
     load(source_url,format='xlsx',sheet='ZERO-MIGRATION',headers=17),
     load(source_url,format='xlsx',sheet='NO CHANGE',headers=17),
+    checkpoint('loaded'),
     delete_fields(fields=['Index', 'Variant', 'Notes']),
     rename_resources,
     unpivot(
@@ -132,7 +133,7 @@ population_estimates = Flow(
         extra_value={'name': 'population', 'type': 'number'},
         resources=resource_names[1:]
     ),
-    add_computed_field(fields=[
+    add_computed_field([
         {
         "operation": "format",
         "target": "Region",
@@ -155,9 +156,10 @@ population_estimates = Flow(
         }
     ]),
     delete_fields(fields=[
-        'Region, subregion, country or area *', 'Country code', 'year', 'population'
-    ]),
-    validate()
+        'Type', 'Parent code', 'Region, subregion, country or area *', 'Country code', 'year', 'population'
+    ], regex=False),
+    validate(),
+    dump_to_path()
 )
 
 def flow(parameters, datapackage, resources, stats):
