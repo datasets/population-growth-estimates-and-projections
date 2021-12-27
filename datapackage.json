@@ -1,15 +1,27 @@
 {
-  "bytes": 128957976,
-  "count_of_rows": 1919736,
+  "bytes": 7448968,
+  "count_of_rows": 231200,
   "descriptor": "Total Population - Both Sexes. De facto population in a country, area or region",
-  "hash": "7b94a8460f46a89b6947a14027f6f977",
+  "hash": "fcfe96106f3bf3d4b18b990c428a95fd",
   "name": "population-growth-estimates-and-projections",
   "profile": "data-package",
+  "readme": "Total Population - Both Sexes. De facto population in a country, area or region as of 1 July of the year indicated. Figures are presented in thousands.\n\n## Data\n\nData comes from [United Nations' Population Division datasets](https://esa.un.org/unpd/wpp/Download/Standard/Population/). Total population (both sexes combined) by region, subregion and country, annually for 1950-2100 (thousands). Data is cleaned, normalized, \"un-pivoted\", and represented in nice machine readable way in CSV format. Dataset represented here has several resources:\n* Estimates from 1950 - 2015. Original\n* Medium fertility variant, 2015 - 2100\n* High fertility variant, 2015 - 2100\n* Low fertility variant, 2015 - 2100\n* Constant fertility variant, 2015 - 2100\n* Instant replacement fertility variant, 2015 - 2100\n* Momentum fertility variant, 2015 - 2100\n* Zero Migration variant, 2015 - 2100\n* Constant Mortality variant, 2015 - 2100\n\n## Preparation\n\nYou will need Python 3.6 or greater and dataflows library to run the script\n\nTo update the data run the process script locally:\n\n```\n# Install dataflows\npip install dataflows\n\n# Run the script\npython population_estimates.py\nSeveral steps will be done to get the final data.\n```\n\n## Licence\n\nUnited Nations, Department of Economic and Social Affairs, Population Division (2017). World Population Prospects: The 2017 Revision, DVD Edition.\n",
   "resources": [
     {
+      "bytes": 583425,
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streaming": true,
       "encoding": "utf-8",
-      "format": "xlsx",
-      "mediatype": "text/xlsx",
+      "format": "csv",
+      "hash": "e3dbbacc5b0c2b135993840c71f005e6",
       "name": "population-estimates",
       "path": "data/population-estimates.csv",
       "profile": "tabular-data-resource",
@@ -17,23 +29,23 @@
         "fields": [
           {
             "format": "default",
-            "name": "Region, subregion, country or area *",
+            "name": "Region",
             "type": "string"
           },
           {
             "format": "default",
-            "name": "Country code",
-            "type": "integer"
+            "name": "Country Code",
+            "type": "string"
           },
           {
             "format": "default",
-            "name": "year",
-            "type": "year"
+            "name": "Year",
+            "type": "string"
           },
           {
             "format": "default",
-            "name": "population",
-            "type": "number"
+            "name": "Population",
+            "type": "string"
           }
         ],
         "missingValues": [
@@ -42,9 +54,20 @@
       }
     },
     {
+      "bytes": 760908,
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streaming": true,
       "encoding": "utf-8",
-      "format": "xlsx",
-      "mediatype": "text/xlsx",
+      "format": "csv",
+      "hash": "d5980ea0f7cda1f3bcf5bbb3833870cf",
       "name": "population-low-fertility",
       "path": "data/population-low-fertility.csv",
       "profile": "tabular-data-resource",
@@ -52,23 +75,23 @@
         "fields": [
           {
             "format": "default",
-            "name": "Region, subregion, country or area *",
+            "name": "Region",
             "type": "string"
           },
           {
             "format": "default",
-            "name": "Country code",
-            "type": "integer"
+            "name": "Country Code",
+            "type": "string"
           },
           {
             "format": "default",
-            "name": "year",
-            "type": "year"
+            "name": "Year",
+            "type": "string"
           },
           {
             "format": "default",
-            "name": "population",
-            "type": "number"
+            "name": "Population",
+            "type": "string"
           }
         ],
         "missingValues": [
@@ -77,9 +100,20 @@
       }
     },
     {
+      "bytes": 762664,
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streaming": true,
       "encoding": "utf-8",
-      "format": "xlsx",
-      "mediatype": "text/xlsx",
+      "format": "csv",
+      "hash": "57ad520c1178a3259a5ddb41d0b4db50",
       "name": "population-medium-fertility",
       "path": "data/population-medium-fertility.csv",
       "profile": "tabular-data-resource",
@@ -87,23 +121,23 @@
         "fields": [
           {
             "format": "default",
-            "name": "Region, subregion, country or area *",
+            "name": "Region",
             "type": "string"
           },
           {
             "format": "default",
-            "name": "Country code",
-            "type": "integer"
+            "name": "Country Code",
+            "type": "string"
           },
           {
             "format": "default",
-            "name": "year",
-            "type": "year"
+            "name": "Year",
+            "type": "string"
           },
           {
             "format": "default",
-            "name": "population",
-            "type": "number"
+            "name": "Population",
+            "type": "string"
           }
         ],
         "missingValues": [
@@ -112,9 +146,20 @@
       }
     },
     {
+      "bytes": 764255,
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streaming": true,
       "encoding": "utf-8",
-      "format": "xlsx",
-      "mediatype": "text/xlsx",
+      "format": "csv",
+      "hash": "75999ceab83327286451063f238f2a20",
       "name": "population-high-fertility",
       "path": "data/population-high-fertility.csv",
       "profile": "tabular-data-resource",
@@ -122,23 +167,23 @@
         "fields": [
           {
             "format": "default",
-            "name": "Region, subregion, country or area *",
+            "name": "Region",
             "type": "string"
           },
           {
             "format": "default",
-            "name": "Country code",
-            "type": "integer"
+            "name": "Country Code",
+            "type": "string"
           },
           {
             "format": "default",
-            "name": "year",
-            "type": "year"
+            "name": "Year",
+            "type": "string"
           },
           {
             "format": "default",
-            "name": "population",
-            "type": "number"
+            "name": "Population",
+            "type": "string"
           }
         ],
         "missingValues": [
@@ -147,9 +192,20 @@
       }
     },
     {
+      "bytes": 764406,
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streaming": true,
       "encoding": "utf-8",
-      "format": "xlsx",
-      "mediatype": "text/xlsx",
+      "format": "csv",
+      "hash": "5b5e430fe62bb6ba2b955588918a9c81",
       "name": "population-constant-fertility",
       "path": "data/population-constant-fertility.csv",
       "profile": "tabular-data-resource",
@@ -157,23 +213,23 @@
         "fields": [
           {
             "format": "default",
-            "name": "Region, subregion, country or area *",
+            "name": "Region",
             "type": "string"
           },
           {
             "format": "default",
-            "name": "Country code",
-            "type": "integer"
+            "name": "Country Code",
+            "type": "string"
           },
           {
             "format": "default",
-            "name": "year",
-            "type": "year"
+            "name": "Year",
+            "type": "string"
           },
           {
             "format": "default",
-            "name": "population",
-            "type": "number"
+            "name": "Population",
+            "type": "string"
           }
         ],
         "missingValues": [
@@ -182,9 +238,20 @@
       }
     },
     {
+      "bytes": 761821,
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streaming": true,
       "encoding": "utf-8",
-      "format": "xlsx",
-      "mediatype": "text/xlsx",
+      "format": "csv",
+      "hash": "70c48393f3a14a8fda33678a21950a7a",
       "name": "population-instant-replacement",
       "path": "data/population-instant-replacement.csv",
       "profile": "tabular-data-resource",
@@ -192,23 +259,23 @@
         "fields": [
           {
             "format": "default",
-            "name": "Region, subregion, country or area *",
+            "name": "Region",
             "type": "string"
           },
           {
             "format": "default",
-            "name": "Country code",
-            "type": "integer"
+            "name": "Country Code",
+            "type": "string"
           },
           {
             "format": "default",
-            "name": "year",
-            "type": "year"
+            "name": "Year",
+            "type": "string"
           },
           {
             "format": "default",
-            "name": "population",
-            "type": "number"
+            "name": "Population",
+            "type": "string"
           }
         ],
         "missingValues": [
@@ -217,9 +284,20 @@
       }
     },
     {
+      "bytes": 762510,
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streaming": true,
       "encoding": "utf-8",
-      "format": "xlsx",
-      "mediatype": "text/xlsx",
+      "format": "csv",
+      "hash": "f3dedbd8ceb25e45671ea64675490f96",
       "name": "population-momentum",
       "path": "data/population-momentum.csv",
       "profile": "tabular-data-resource",
@@ -227,23 +305,23 @@
         "fields": [
           {
             "format": "default",
-            "name": "Region, subregion, country or area *",
+            "name": "Region",
             "type": "string"
           },
           {
             "format": "default",
-            "name": "Country code",
-            "type": "integer"
+            "name": "Country Code",
+            "type": "string"
           },
           {
             "format": "default",
-            "name": "year",
-            "type": "year"
+            "name": "Year",
+            "type": "string"
           },
           {
             "format": "default",
-            "name": "population",
-            "type": "number"
+            "name": "Population",
+            "type": "string"
           }
         ],
         "missingValues": [
@@ -252,9 +330,20 @@
       }
     },
     {
+      "bytes": 762345,
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streaming": true,
       "encoding": "utf-8",
-      "format": "xlsx",
-      "mediatype": "text/xlsx",
+      "format": "csv",
+      "hash": "949050db4897c8f5724aeef951a9ca0c",
       "name": "population-zero-migration",
       "path": "data/population-zero-migration.csv",
       "profile": "tabular-data-resource",
@@ -262,23 +351,23 @@
         "fields": [
           {
             "format": "default",
-            "name": "Region, subregion, country or area *",
+            "name": "Region",
             "type": "string"
           },
           {
             "format": "default",
-            "name": "Country code",
-            "type": "integer"
+            "name": "Country Code",
+            "type": "string"
           },
           {
             "format": "default",
-            "name": "year",
-            "type": "year"
+            "name": "Year",
+            "type": "string"
           },
           {
             "format": "default",
-            "name": "population",
-            "type": "number"
+            "name": "Population",
+            "type": "string"
           }
         ],
         "missingValues": [
@@ -287,9 +376,20 @@
       }
     },
     {
+      "bytes": 762941,
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streaming": true,
       "encoding": "utf-8",
-      "format": "xlsx",
-      "mediatype": "text/xlsx",
+      "format": "csv",
+      "hash": "5b48cb668912dc67d99febca8fc6e64e",
       "name": "population-constant-mortality",
       "path": "data/population-constant-mortality.csv",
       "profile": "tabular-data-resource",
@@ -297,23 +397,23 @@
         "fields": [
           {
             "format": "default",
-            "name": "Region, subregion, country or area *",
+            "name": "Region",
             "type": "string"
           },
           {
             "format": "default",
-            "name": "Country code",
-            "type": "integer"
+            "name": "Country Code",
+            "type": "string"
           },
           {
             "format": "default",
-            "name": "year",
-            "type": "year"
+            "name": "Year",
+            "type": "string"
           },
           {
             "format": "default",
-            "name": "population",
-            "type": "number"
+            "name": "Population",
+            "type": "string"
           }
         ],
         "missingValues": [
@@ -322,9 +422,20 @@
       }
     },
     {
+      "bytes": 763693,
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streaming": true,
       "encoding": "utf-8",
-      "format": "xlsx",
-      "mediatype": "text/xlsx",
+      "format": "csv",
+      "hash": "e7b1d64671f720bcf8484b9c4cfac08f",
       "name": "population-no-change",
       "path": "data/population-no-change.csv",
       "profile": "tabular-data-resource",
@@ -332,23 +443,23 @@
         "fields": [
           {
             "format": "default",
-            "name": "Region, subregion, country or area *",
+            "name": "Region",
             "type": "string"
           },
           {
             "format": "default",
-            "name": "Country code",
-            "type": "integer"
+            "name": "Country Code",
+            "type": "string"
           },
           {
             "format": "default",
-            "name": "year",
-            "type": "year"
+            "name": "Year",
+            "type": "string"
           },
           {
             "format": "default",
-            "name": "population",
-            "type": "number"
+            "name": "Population",
+            "type": "string"
           }
         ],
         "missingValues": [
@@ -366,7 +477,7 @@
           "name": "population-estimates",
           "transform": [
             {
-              "expression": "data['region'] === 'WORLD'",
+              "expression": "data['Region'] === 'WORLD'",
               "type": "filter"
             }
           ]
@@ -389,7 +500,7 @@
           "name": "population-no-change",
           "transform": [
             {
-              "expression": "data['region'] === 'WORLD'",
+              "expression": "data['Region'] === 'WORLD'",
               "type": "filter"
             }
           ]
@@ -412,7 +523,7 @@
           "name": "population-low-fertility",
           "transform": [
             {
-              "expression": "data['region'] === 'WORLD'",
+              "expression": "data['Region'] === 'WORLD'",
               "type": "filter"
             }
           ]
@@ -435,7 +546,7 @@
           "name": "population-medium-fertility",
           "transform": [
             {
-              "expression": "data['region'] === 'WORLD'",
+              "expression": "data['Region'] === 'WORLD'",
               "type": "filter"
             }
           ]
@@ -458,7 +569,7 @@
           "name": "population-high-fertility",
           "transform": [
             {
-              "expression": "data['region'] === 'WORLD'",
+              "expression": "data['Region'] === 'WORLD'",
               "type": "filter"
             }
           ]
