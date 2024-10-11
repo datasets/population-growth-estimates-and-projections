@@ -468,5 +468,6 @@
       }
     }
   ],
-  "title": "Population Growth"
+  "title": "Population Growth",
+  "collection": "demographics"
 }
